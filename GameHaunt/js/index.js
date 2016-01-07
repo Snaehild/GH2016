@@ -3,7 +3,7 @@
   var user_name, api_key, twitch_widget;
   
   user_name = "gamehaunt";
-  api_key = "5j0r5b7qb7kro03fvka3o8kbq262wwm";
+  api_key = "adyyz3ya3ko0smf08a91xv3vd7tjkmi";
   twitch_widget = $("#twitch-widget");
 
   twitch_widget.attr("href","http://gamehaunt.com/live/");
