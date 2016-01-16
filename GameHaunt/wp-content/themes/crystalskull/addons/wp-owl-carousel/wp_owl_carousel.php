@@ -261,8 +261,8 @@ class crystalskull_Wp_Owl_Carousel {
                      <i class="fa fa-star"></i>
                      <i class="fa fa-star"></i>
                      <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
                      <i class="fa fa-star-half-o"></i>
-                     <i class="fa fa-star-o"></i>
                     ';
 					}
 
@@ -313,9 +313,9 @@ class crystalskull_Wp_Owl_Carousel {
 				$html .= '</a>';
 
 				$html .= '<a class="car_inner_title" href="' . get_the_permalink($post -> ID) . '">' . get_the_title($post -> ID) . '</a>';
-
+				$author_id=$post->post_author;
 				$html .= esc_html__('by ', 'crystalskull');
-				$html .= '<a data-original-title="' . esc_html__("View all posts by ", 'crystalskull') . get_the_author() . '" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_the_author() . '</a></div>';
+				$html .= '<a data-original-title="' . esc_html__("View all posts by ", 'crystalskull') . get_the_author_meta( 'user_nicename' , $author_id ) . '" href="' . esc_url(get_author_posts_url($author_id) ) . '">' . get_the_author_meta( 'user_nicename' , $author_id ) . '</a></div>';
 
 				$html .= '</div>';
 			}

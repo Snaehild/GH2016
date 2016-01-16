@@ -154,8 +154,8 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_text_column
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
 						<i class="fa fa-star-half-o"></i>
-						<i class="fa fa-star-o"></i>
 					</div>
 					<?php } ?>
 

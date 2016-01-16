@@ -112,8 +112,9 @@ if($overall_rating != "0" && $overall_rating == "4.5"){
 		<i class="fa fa-star"></i>
 		<i class="fa fa-star"></i>
 		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
 		<i class="fa fa-star-half-o"></i>
-		<i class="fa fa-star-o"></i>
+
 	</div>
 	<?php } ?>
 

@@ -155,7 +155,7 @@ if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_
              <h1><?php
                  if ( is_plugin_active( 'woocommerce/woocommerce.php' )){
                     if (is_shop()){ echo get_the_title(skywarrior_get_id_by_slug ('shop'));}
-                    else{ if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
+                    else{ if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
@@ -165,7 +165,7 @@ if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_
 				    <?php else : ?>
 				        <?php esc_html_e( 'Blog Archives', 'crystalskull' ); ?>
 				    <?php endif; }else{the_title();} }
-                 }else{  if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
+                 }else{  if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>

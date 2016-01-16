@@ -517,6 +517,8 @@
 	border:0px;
 	color:#999;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	width: 175px;
+    outline: none !important;
 }
 .nav-tab-active, .nav-tab-active.current:hover, .nav-tab-active:hover{
 	color: white;
