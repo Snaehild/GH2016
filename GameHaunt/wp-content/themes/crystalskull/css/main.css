@@ -2100,6 +2100,9 @@ ul.social-media li a:hover {
     -moz-transition: -moz-transform .4s;
     transition: transform .4s;
 }
+.default-blog .blog-image{
+	display:none;
+}
 .blog-image {
     position: relative;
     background-color: white;
@@ -2278,7 +2281,7 @@ ul.social-media li a:hover {
 }
 
 .blog-image .carousel_rating {
-    width:158px;
+    width:152px;
     position: absolute;
     bottom: 10px;
     right: 50%;
@@ -2835,11 +2838,6 @@ footer .widget ul li, footer .latest-twitter-tweet:nth-child(2) {
     bottom: 0px;
     font-size: 11px;
     text-align: center;
-}
-footer .latest-post-w li a .carousel_rating{
-	height:101%;
-	bottom:-1px;
-
 }
 .latest-post-w li .info{
 	float: left;
@@ -4394,11 +4392,9 @@ body .ubermenu-skin-clean-white .ubermenu-submenu .ubermenu-item-header > .uberm
 
 .clanwar-list .home-team {
 	color: #777;
+	display: none;
+}
 
-}
-ul.clanwar-list .icon, ul.clanwar-list .opponent-team .flag{
-	display:none;
-}
 ul.clanwar-list  {
 	list-style: none;
 	margin: 0;
@@ -4412,7 +4408,7 @@ ul.clanwar-list li {
 
 ul.clanwar-list li.clanwar-item {
 	margin: 0;
-	padding: 10px 20px;
+	padding: 0.4688em 0;
 }
 
 .no-js .clanwar-list .tabs {
@@ -4444,7 +4440,7 @@ ul.clanwar-list li.clanwar-item {
 
 .clanwar-list .tabs li:hover a,
 .clanwar-list .tabs li.selected a {
-	color: white;
+	/*color: #707070;*/
 	/*color: rgba(51, 51, 51, 0.7);*/
 }
 
@@ -4454,10 +4450,7 @@ ul.clanwar-list li.clanwar-item {
 	padding: 3px 8px;
 	outline: 0;
 }
-.clanwar-list .tabs{
-	padding-left:15px;
-	padding-bottom:0px
-}
+
 .clanwar-list ul.clanwar-list li.clanwar-item .wrap {
 	margin: 0;
 	padding: 0;
@@ -4487,7 +4480,7 @@ ul.clanwar-list li.clanwar-item {
 
 	position: absolute;
 	padding: 5px;
-	right: 20px;
+	right: 0;
 	margin: 0;
 }
 
@@ -4549,13 +4542,8 @@ ul.clanwar-list li.clanwar-item {
 }
 
 .clanwar-list .opponent-team {
-	    line-height: 1.2em;
-    margin-bottom: 0px;
-    float: left;
-    display: inline-block;
-    margin-right: 10px;
-    position: relative;
-    top: 3px;
+	line-height: 1.2em;
+	margin-bottom: 5px;
 }
 
 .clanwar-list .scores.win

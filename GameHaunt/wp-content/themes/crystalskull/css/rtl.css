@@ -25,20 +25,3 @@ div.rating:after {
 .heart-love-count .fa {
   margin-left: 5px !important;
 }
-
-h3.widget-title{
-	min-width:100%;
-}
-
-.clanwar-list .scores, .clanwar-list .upcoming, .clanwar-list .playing{
-	right:initial !important;
-	left:10px;
-}
-
-ul.clanwar-list li.clanwar-item {
-    padding-right:10px;
-}
-
-body .newsbv-item-first .newsb-thumbnail{
-	margin-right:0px !important;
-}
