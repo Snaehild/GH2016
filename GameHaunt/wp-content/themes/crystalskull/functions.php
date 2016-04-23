@@ -50,9 +50,6 @@ function crystalskull_theme_setup() {
     /*buffering*/
     add_action( 'init', 'crystalskull_do_output_buffer' );
 
-    /*comments*/
-    add_action( 'comment_post', 'crystalskull_ajaxify_comments',20, 2 );
-
     /*post templates*/
     add_action( 'init', 'crystalskull_post_templates_plugin_init' );
 
@@ -557,6 +554,7 @@ function crystalskull_style() {
    if ( is_rtl() )
     {
         wp_register_style('crystalskull-rtl',  get_template_directory_uri() . '/css/rtl.css', array(), '20150401');
+		wp_register_style('crystalskull-rtl',  get_template_directory_uri() . '/css/buddypress-rtl.css', array(), '20150401');
         wp_enqueue_style( 'crystalskull-rtl' );
     }
 }
@@ -724,7 +722,6 @@ function crystalskull_commenter_link() {
 
 
 /*add smartmetaboxes*/
-
 add_smart_meta_box('my-meta-box9', array(
 'title' => esc_html__('Slider shortcode (works with "Homepage" template only)','crystalskull' ), // the title of the meta box
 'pages' => array('page'),  // post types on which you want the metabox to appear
@@ -936,44 +933,6 @@ function crystalskull_aq_upscale( $default, $orig_w, $orig_h, $dest_w, $dest_h, 
     return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
 }
 
-//ajax comments
-function crystalskull_ajaxify_comments($comment_ID, $comment_status){
-    if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
-        switch($comment_status){
-            case "0":
-            wp_notify_moderator($comment_ID);
-            case "1": //Approved comment
-            esc_html_e("success",'crystalskull');
-            $commentdata =& get_comment($comment_ID, ARRAY_A);
-            $post =& get_post($commentdata['comment_post_ID']);
-            wp_notify_postauthor($comment_ID, $commentdata['comment_type']);
-            break;
-            default:
-            esc_html_e("error",'crystalskull');
-        }
-    exit;
-    }
-}
-
-//multiple featured images
-  if (class_exists('MultiPostThumbnails')) {
-
-                 new MultiPostThumbnails(
-                    array(
-                        'label' => 'Header Image',
-                        'id' => 'header-image',
-                        'post_type' => 'page'
-                    )
-                );
-
-                 new MultiPostThumbnails(
-                    array(
-                        'label' => 'Header Image',
-                        'id' => 'header-image-post',
-                        'post_type' => 'post'
-                    )
-                );
-	}
 function crystalskull_change_mce_options( $init ) {
     // Command separated string of extended elements
     $ext = 'pre[id|name|class|style]';
@@ -1281,6 +1240,49 @@ function crystalskull_link_pages_args_prevnext_add($args)
     return $args;
 }
 
+function skywarrior_get_id_by_slug($page_slug) {
+	$page = get_page_by_path($page_slug);
+	if ($page) {
+		return $page->ID;
+	} else {
+		return null;
+	}
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Custom Login
+/*-----------------------------------------------------------------------------------*/
+function my_custom_login() {
+echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
+}
+add_action('login_head', 'my_custom_login');
+function my_login_logo_url() {
+return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+function my_login_logo_url_title() {
+return 'GameHaunt';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+/*-----------------------------------------------------------------------------------*/
+/*	Change Redirect URL
+/*-----------------------------------------------------------------------------------*/
+function admin_login_redirect( $redirect_to, $request, $user )
+{
+global $user;
+if( isset( $user->roles ) && is_array( $user->roles ) ) {
+if( in_array( "administrator", $user->roles ) ) {
+return $redirect_to;
+} else {
+return home_url();
+}
+}
+else
+{
+return $redirect_to;
+}
+}
+add_filter("login_redirect", "admin_login_redirect", 10, 3);
 
 /* Custom code goes above this line. */
 ?>

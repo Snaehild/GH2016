@@ -41,10 +41,10 @@ class sw_latest_comments extends WP_Widget {
 
 					<li class="comment-wrap">
 						<div class="aavatar">
-							<a href="<?php echo get_permalink($comment->ID); ?>#comment-<?php echo esc_attr($comment->comment_ID); ?>" title="on <?php echo esc_attr($comment->post_title); ?>"><?php echo get_avatar( $comment->user_id, 60, '', 'author image', array('class' => 'authorimg') ); ?></a>
+							<a href="<?php echo get_permalink($comment->comment_post_ID); ?>#comment-<?php echo esc_attr($comment->comment_ID); ?>" title="on <?php echo esc_attr($comment->post_title); ?>"><?php echo get_avatar( $comment->user_id, 60, '', 'author image', array('class' => 'authorimg') ); ?></a>
 						</div>
 						<div class="com_details">
-							<a href="<?php echo get_permalink($comment->ID); ?>#comment-<?php echo esc_attr($comment->comment_ID); ?>" title="on <?php echo esc_attr($comment->post_title); ?>"><?php echo strip_tags($comment->comment_author); ?> <i><?php _e('says:', 'crystalskull'); ?></i></a>
+							<a href="<?php echo get_permalink($comment->comment_post_ID); ?>#comment-<?php echo esc_attr($comment->comment_ID); ?>" title="on <?php echo esc_attr($comment->post_title); ?>"><?php echo strip_tags($comment->comment_author); ?> <i><?php _e('says:', 'crystalskull'); ?></i></a>
 							<!-- <div class="com_title">
 								<?php //echo substr(esc_attr($comment->post_title),0, 30);  ?>...
 							</div>-->

@@ -11,7 +11,7 @@
     <?php include_once 'css/colours.css.php'; ?>
 	<?php $currentlang = apply_filters( "wpml_home_url", esc_url(home_url('/')));  ?>
 
-<?php wp_head(); ?>
+<?php wp_head();  ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="main_wrapper">
@@ -163,7 +163,14 @@ if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_
 				    <?php elseif ( is_year() ) : ?>
 				        <?php printf( esc_html__( 'Yearly Archives: %s', 'crystalskull' ), get_the_date( _x( 'Y', 'yearly archives date format', 'crystalskull' ) ) ); ?>
 				    <?php else : ?>
-				        <?php esc_html_e( 'Blog Archives', 'crystalskull' ); ?>
+				        <?php
+				        if(function_exists('is_bbpress')){
+				        	if(is_bbpress()){
+				        		esc_html_e( 'Forums', 'crystalskull' );
+				        	}
+						}else{
+				        		esc_html_e( 'Blog Archives', 'crystalskull' );
+				        } ?>
 				    <?php endif; }else{the_title();} }
                  }else{  if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
@@ -173,7 +180,14 @@ if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_
 				    <?php elseif ( is_year() ) : ?>
 				        <?php printf( esc_html__( 'Yearly Archives: %s', 'crystalskull' ), get_the_date( _x( 'Y', 'yearly archives date format', 'crystalskull' ) ) ); ?>
 				    <?php else : ?>
-				        <?php esc_html_e( 'Blog Archives', 'crystalskull' ); ?>
+				        <?php
+				        if(function_exists('is_bbpress')){
+				        	if(is_bbpress()){
+				        		esc_html_e( 'Forums', 'crystalskull' );
+				        	}
+						}else{
+				        		esc_html_e( 'Blog Archives', 'crystalskull' );
+				        } ?>
 				    <?php endif; }else{the_title();} } ?>
             </h1>
             </div>

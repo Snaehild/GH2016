@@ -58,7 +58,11 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_text_column
 
 
 						<!-- blog-rating -->
-						<?php require(get_template_directory().'/rating.php'); ?>
+				<?php		if(of_get_option('rating_type') == 'stars'){
+				    	 require(get_template_directory() .'/post-rating.php');
+				    	 }else{
+				    	 require(get_template_directory() .'/post-rating-num.php');
+				    	 } ?>
 						<!-- blog-rating -->
 						<span class="overlay-link"></span>
 						<i class="fa fa-hand-pointer-o" style="text-shadow: 0px 0px 10px <?php echo esc_attr($cat_data['catBG']); ?>"></i>

@@ -34,7 +34,16 @@
     $rating_four = get_post_meta($post->ID, 'creteria_4', true);
     $rating_five = get_post_meta($post->ID, 'creteria_5', true);
 
-    if($overall_rating== NULL or $rating_one== NULL && $rating_two== NULL && $rating_three== NULL && $rating_four== NULL && $rating_five== NULL ){}else{ require(get_template_directory() .'/post-rating.php'); } ?><!-- /post ratings -->
+    if($overall_rating== NULL or $rating_one== NULL && $rating_two== NULL && $rating_three== NULL && $rating_four== NULL && $rating_five== NULL ){
+
+    }else{
+    	if(of_get_option('rating_type') == 'stars'){
+    	 require(get_template_directory() .'/post-rating.php');
+    	 }else{
+    	 require(get_template_directory() .'/post-rating-num.php');
+    	 }
+
+	} ?><!-- /post ratings -->
 
 
 	<div class="blog-content wcontainer"><!-- /.blog-content -->

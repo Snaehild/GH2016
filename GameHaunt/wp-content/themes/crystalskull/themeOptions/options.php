@@ -43,11 +43,6 @@ function optionsframework_options() {
                         "id" => "logo",
                         "std" => get_template_directory_uri()."/img/logo.png",
                         "type" => "upload");
-   $options[] = array( "name" => esc_html__("Login button in the menu", 'crystalskull'),
-                        "desc" => esc_html__("Enable the login avatar in the menu", 'crystalskull'),
-                        "id" => "login_menu",
-                        "std" => "1",
-                        "type" => "jqueryselect");
     $options[] = array( "name" => esc_html__("Image appear effect", 'crystalskull'),
                         "desc" => esc_html__("Enable the image appearing effect when scrolling down.", 'crystalskull'),
                         "id" => "appear",
@@ -113,7 +108,21 @@ $options_categories_obj = get_categories();
 		)
 	);
 
+	$options[] = array( "name" => esc_html__("Posts", 'crystalskull'),
+                     "type" => "info");
 
+	$options[] = array(
+		'name' => esc_html__( 'Select rating type', 'crystalskull' ),
+		'desc' => esc_html__( 'Choose rating type for your posts', 'crystalskull' ),
+		'id' => 'rating_type',
+		'std' => 'stars',
+		'type' => 'select',
+		'class' => 'mini', //mini, tiny, small
+		'options' => array(
+				'numbers' => esc_html__( 'Numbers', 'crystalskull' ),
+				'stars' => esc_html__( 'Stars', 'crystalskull' )
+		)
+	);
 
 //SEO
 $options[] = array( "name" => esc_html__("SEO", 'crystalskull'),

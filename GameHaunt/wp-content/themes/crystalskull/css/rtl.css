@@ -25,3 +25,38 @@ div.rating:after {
 .heart-love-count .fa {
   margin-left: 5px !important;
 }
+
+h3.widget-title{
+	min-width:100%;
+}
+
+.clanwar-list .scores, .clanwar-list .upcoming, .clanwar-list .playing{
+	right:initial !important;
+	left:10px;
+}
+
+ul.clanwar-list li.clanwar-item {
+    padding-right:10px;
+}
+
+body .newsbv-item-first .newsb-thumbnail{
+	margin-right:0px !important;
+}
+.navbar-inverse .nav>li>a, .ubermenu > ul > .ubermenu-item > a{
+	text-align:right !important;
+}
+
+.dropdown:hover .dropdown-menu li>a {
+	text-align:right !important;
+}
+.dropdown:hover > .dropdown-menu{
+	right: 0px !important;
+}
+
+body .dropdown-menu .sub-menu.dropdown-menu {
+    right: 100% !important;
+    position: absolute;
+    top: -2px!important;
+    visibility: none;
+    left: initial;
+}

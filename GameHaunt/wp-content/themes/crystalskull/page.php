@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php if (class_exists('MultiPostThumbnails')) : wp_reset_postdata(); $custombck = MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), 'header-image', $post->ID, 'full'); endif; ?>
+<?php $custombck = wp_get_attachment_url( get_post_thumbnail_id($wp_query->post->ID) ); ?>
 <?php if(empty($custombck)){}else{ ?>
 <style>
     body.page{

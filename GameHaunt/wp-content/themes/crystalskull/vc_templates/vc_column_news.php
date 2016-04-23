@@ -60,6 +60,83 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_text_column
 
 
 					<?php $overall_rating = get_post_meta($post -> ID, 'overall_rating', true); ?>
+					<?php if(of_get_option('rating_type') == 'numbers'){ ?>
+
+
+			                	<?php
+					if($overall_rating != "0" && $overall_rating=="0.5"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 0.5</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "1"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 1</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "1.5"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 1.5</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "2"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 2</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "2.5"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 2.5</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "3"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 3</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "3.5"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 3.5</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "4"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 4</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "4.5"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 4.5</b>/5
+					</div>
+					<?php } ?>
+
+					<?php
+					if($overall_rating != "0" && $overall_rating == "5"){ ?>
+					<div class="carousel_rating carousel_rating_number">
+						<b style="color: <?php echo esc_attr($cat_data["catBG"]); ?>"><i class="fa fa-trophy"></i> 5</b>/5
+					</div>
+					<?php } ?>
+
+
+
+					<?php }else{ ?>
+
 			                	<?php
 					if($overall_rating != "0" && $overall_rating=="0.5"){ ?>
 					<div class="carousel_rating" style="color: <?php echo esc_attr($cat_data["catBG"]); ?>">
@@ -170,9 +247,9 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_text_column
 					</div>
 					<?php } ?>
 
+					<?php } ?>
                         <a rel="bookmark" href="<?php the_permalink(); ?>">
 							<i class="fa fa-hand-pointer-o" style="text-shadow: 0px 0px 10px <?php echo esc_attr($cat_data['catBG']); ?>"></i>
-
                             <?php if(has_post_thumbnail()){
                                     $thumb = get_post_thumbnail_id();
                                     $img_url = wp_get_attachment_url( $thumb,'full'); //get img URL

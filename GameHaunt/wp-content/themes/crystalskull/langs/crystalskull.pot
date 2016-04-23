@@ -6,8 +6,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Fri Jun 05 2015 14:07:37 GMT+0200 (Central Europe "
 "Daylight Time)\n"
-"POT-Revision-Date: Wed Nov 18 2015 15:41:52 GMT+0100 (Central Europe "
-"Standard Time)\n"
+"POT-Revision-Date: Wed Apr 20 2016 18:25:54 GMT+0200 (Central Europe "
+"Daylight Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,33 +26,33 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: ../blog-roll-full-tmp.php:21 ../blog-roll-full-tmp.php:25 ../blog-roll-full-
-#: tmp.php:28 ../blog-roll-full-tmp.php:31 ../blog-roll-right-tmp.php:21 ../blog-
-#: roll-right-tmp.php:25 ../blog-roll-right-tmp.php:28 ../blog-roll-right-tmp.php:
-#: 31 ../blog-roll-left-tmp.php:26 ../blog-roll-left-tmp.php:30 ../blog-roll-left-
-#: tmp.php:33 ../blog-roll-left-tmp.php:36
+#: ../blog-roll-full-tmp.php:25 ../blog-roll-full-tmp.php:29 ../blog-roll-full-
+#: tmp.php:32 ../blog-roll-full-tmp.php:35 ../blog-roll-right-tmp.php:25 ../blog-
+#: roll-right-tmp.php:29 ../blog-roll-right-tmp.php:32 ../blog-roll-right-tmp.php:
+#: 35 ../blog-roll-left-tmp.php:30 ../blog-roll-left-tmp.php:34 ../blog-roll-left-
+#: tmp.php:37 ../blog-roll-left-tmp.php:40
 msgid "Nothing Found"
 msgstr ""
 
-#: ../blog-roll-full-tmp.php:22 ../blog-roll-right-tmp.php:22 ../blog-roll-left-
-#: tmp.php:27
+#: ../blog-roll-full-tmp.php:26 ../blog-roll-right-tmp.php:26 ../blog-roll-left-
+#: tmp.php:31
 msgid ""
 "Sorry, but nothing matched your search criteria. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: ../blog-roll-full-tmp.php:26 ../blog-roll-right-tmp.php:26 ../blog-roll-left-
-#: tmp.php:31
+#: ../blog-roll-full-tmp.php:30 ../blog-roll-right-tmp.php:30 ../blog-roll-left-
+#: tmp.php:35
 msgid "Sorry, but there are no posts for this category yet."
 msgstr ""
 
-#: ../blog-roll-full-tmp.php:29 ../blog-roll-right-tmp.php:29 ../blog-roll-left-
-#: tmp.php:34
+#: ../blog-roll-full-tmp.php:33 ../blog-roll-right-tmp.php:33 ../blog-roll-left-
+#: tmp.php:38
 msgid "Sorry, but there are no posts  for this tag yet."
 msgstr ""
 
-#: ../blog-roll-full-tmp.php:32 ../blog-roll-right-tmp.php:32 ../blog-roll-left-
-#: tmp.php:37
+#: ../blog-roll-full-tmp.php:36 ../blog-roll-right-tmp.php:36 ../blog-roll-left-
+#: tmp.php:41
 msgid "Sorry, but there are no posts for this author yet."
 msgstr ""
 
@@ -60,79 +60,79 @@ msgstr ""
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr ""
 
-#: ../short-comments.php:27
+#: ../short-comments.php:40
 #, php-format
 msgid "<span>%d</span> Comments"
 msgstr ""
 
-#: ../short-comments.php:27
+#: ../short-comments.php:40
 msgid "<span>One</span> Comment"
 msgstr ""
 
-#: ../short-comments.php:49
+#: ../short-comments.php:62
 #, php-format
 msgid "<span>%d</span> Trackbacks"
 msgstr ""
 
-#: ../short-comments.php:49
+#: ../short-comments.php:62
 msgid "<span>One</span> Trackback"
 msgstr ""
 
-#: ../short-comments.php:60
+#: ../short-comments.php:73
 msgid "Leave a comment"
 msgstr ""
 
-#: ../short-comments.php:60
+#: ../short-comments.php:73
 #, php-format
 msgid "Post a Reply to %s"
 msgstr ""
 
-#: ../short-comments.php:63 ../short-comments-blog.php:36
+#: ../short-comments.php:76 ../short-comments-blog.php:48
 #, php-format
 msgid "You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
 msgstr ""
 
-#: ../short-comments.php:70
+#: ../short-comments.php:83
 msgid "Your email is <em>never</em> published nor shared."
 msgstr ""
 
-#: ../short-comments.php:70
+#: ../short-comments.php:83
 msgid "Required fields are marked <span class=\"required\">*</span>"
 msgstr ""
 
-#: ../short-comments.php:72
+#: ../short-comments.php:85
 msgid "Name"
 msgstr ""
 
-#: ../short-comments.php:72 ../short-comments.php:76
+#: ../short-comments.php:85 ../short-comments.php:89
 msgid "<span class=\"required\">*</span>"
 msgstr ""
 
-#: ../short-comments.php:76
+#: ../short-comments.php:89
 msgid "Email"
 msgstr ""
 
-#: ../short-comments.php:80 ../short-comments-blog.php:53
+#: ../short-comments.php:93 ../short-comments-blog.php:65
 msgid "Website"
 msgstr ""
 
-#: ../short-comments.php:86
+#: ../short-comments.php:99
 msgid "Comment"
 msgstr ""
 
-#: ../short-comments.php:90
+#: ../short-comments.php:103
 msgid "Post"
 msgstr ""
 
-#: ../pluginactivation.php:149 ../functions.php:509
+#: ../pluginactivation.php:149 ../functions.php:526
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../pluginactivation.php:150 ../functions.php:510
+#: ../pluginactivation.php:150 ../functions.php:527
 msgid "Install Plugins"
 msgstr ""
 
-#: ../pluginactivation.php:151 ../functions.php:511
+#: ../pluginactivation.php:151 ../functions.php:528
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
@@ -141,21 +141,21 @@ msgstr ""
 msgid "Something went wrong."
 msgstr ""
 
-#: ../pluginactivation.php:153 ../functions.php:513
+#: ../pluginactivation.php:153 ../functions.php:530
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:154 ../functions.php:514
+#: ../pluginactivation.php:154 ../functions.php:531
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:155 ../functions.php:515
+#: ../pluginactivation.php:155 ../functions.php:532
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -168,21 +168,21 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:156 ../functions.php:516
+#: ../pluginactivation.php:156 ../functions.php:533
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:157 ../functions.php:517
+#: ../pluginactivation.php:157 ../functions.php:534
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:158 ../functions.php:518
+#: ../pluginactivation.php:158 ../functions.php:535
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s plugin."
@@ -195,7 +195,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:159 ../functions.php:519
+#: ../pluginactivation.php:159 ../functions.php:536
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -206,7 +206,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:160 ../functions.php:520
+#: ../pluginactivation.php:160 ../functions.php:537
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -219,23 +219,23 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:161 ../functions.php:521
+#: ../pluginactivation.php:161 ../functions.php:538
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:162 ../functions.php:522
+#: ../pluginactivation.php:162 ../functions.php:539
 msgid "Activate installed plugin"
 msgid_plural "Activate installed plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:163 ../pluginactivation.php:417 ../functions.php:523
+#: ../pluginactivation.php:163 ../pluginactivation.php:416 ../functions.php:540
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../pluginactivation.php:164 ../pluginactivation.php:1543 ../functions.php:524
+#: ../pluginactivation.php:164 ../pluginactivation.php:1555 ../functions.php:541
 msgid "Plugin activated successfully."
 msgstr ""
 
@@ -244,218 +244,247 @@ msgstr ""
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: ../pluginactivation.php:325
+#: ../pluginactivation.php:324
 msgid "Not set"
 msgstr ""
 
-#: ../pluginactivation.php:441 ../pluginactivation.php:441 ../pluginactivation.
-#: php:1717 ../pluginactivation.php:1717
+#: ../pluginactivation.php:440 ../pluginactivation.php:440 ../pluginactivation.
+#: php:1734 ../pluginactivation.php:1734
 msgid "Return to the Dashboard"
 msgstr ""
 
-#: ../pluginactivation.php:465
+#: ../pluginactivation.php:464
 #, php-format
 msgid "The following plugin was activated successfully: %s."
 msgstr ""
 
-#: ../pluginactivation.php:604
+#: ../pluginactivation.php:603
 msgid "Dismiss this notice"
 msgstr ""
 
-#: ../pluginactivation.php:920
+#: ../pluginactivation.php:919
 msgid "External Link"
 msgstr ""
 
-#: ../pluginactivation.php:925
+#: ../pluginactivation.php:924
 msgid "Private Repository"
 msgstr ""
 
-#: ../pluginactivation.php:928
+#: ../pluginactivation.php:927
 msgid "Pre-Packaged"
 msgstr ""
 
-#: ../pluginactivation.php:932
+#: ../pluginactivation.php:931
 msgid "WordPress Repository"
 msgstr ""
 
-#: ../pluginactivation.php:934
+#: ../pluginactivation.php:933
 msgid "Required"
 msgstr ""
 
-#: ../pluginactivation.php:934
+#: ../pluginactivation.php:933
 msgid "Recommended"
 msgstr ""
 
-#: ../pluginactivation.php:936
+#: ../pluginactivation.php:935
 msgid "Not Installed"
 msgstr ""
 
-#: ../pluginactivation.php:938
+#: ../pluginactivation.php:937
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: ../pluginactivation.php:1082
+#: ../pluginactivation.php:1089
 #, php-format
 msgid ""
 "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
 "Dashboard\">Return to the Dashboard</a>"
 msgstr ""
 
-#: ../pluginactivation.php:1095
+#: ../pluginactivation.php:1102
 msgid "Plugin"
 msgstr ""
 
-#: ../pluginactivation.php:1096
+#: ../pluginactivation.php:1103
 msgid "Source"
 msgstr ""
 
-#: ../pluginactivation.php:1097
+#: ../pluginactivation.php:1104
 msgid "Type"
 msgstr ""
 
-#: ../pluginactivation.php:1098
+#: ../pluginactivation.php:1105
 msgid "Status"
 msgstr ""
 
-#: ../pluginactivation.php:1112
+#: ../pluginactivation.php:1119
 msgid "Install"
 msgstr ""
 
-#: ../pluginactivation.php:1113
+#: ../pluginactivation.php:1120
 msgid "Activate"
 msgstr ""
 
-#: ../pluginactivation.php:1295
+#: ../pluginactivation.php:1302
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pluginactivation.php:1529
+#: ../pluginactivation.php:1541
 msgid "Install package not available."
 msgstr ""
 
-#: ../pluginactivation.php:1530
+#: ../pluginactivation.php:1542
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
 
-#: ../pluginactivation.php:1531
+#: ../pluginactivation.php:1543
 msgid "Unpacking the package&#8230;"
 msgstr ""
 
-#: ../pluginactivation.php:1532
+#: ../pluginactivation.php:1544
 msgid "Installing the plugin&#8230;"
 msgstr ""
 
-#: ../pluginactivation.php:1533
+#: ../pluginactivation.php:1545
 msgid "Plugin install failed."
 msgstr ""
 
-#: ../pluginactivation.php:1534
+#: ../pluginactivation.php:1546
 msgid "Plugin installed successfully."
 msgstr ""
 
-#: ../pluginactivation.php:1542
+#: ../pluginactivation.php:1554
 msgid "Plugin activation failed."
 msgstr ""
 
-#: ../pluginactivation.php:1633
+#: ../pluginactivation.php:1648
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
 
-#: ../pluginactivation.php:1634
+#: ../pluginactivation.php:1649
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: ../pluginactivation.php:1634 ../pluginactivation.php:1643
+#: ../pluginactivation.php:1649 ../pluginactivation.php:1658
 msgid "Show Details"
 msgstr ""
 
-#: ../pluginactivation.php:1634 ../pluginactivation.php:1643
+#: ../pluginactivation.php:1649 ../pluginactivation.php:1658
 msgid "Hide Details"
 msgstr ""
 
-#: ../pluginactivation.php:1635
+#: ../pluginactivation.php:1650
 msgid "All installations and activations have been completed."
 msgstr ""
 
-#: ../pluginactivation.php:1636
+#: ../pluginactivation.php:1651
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../pluginactivation.php:1640
+#: ../pluginactivation.php:1655
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
 
-#: ../pluginactivation.php:1641
+#: ../pluginactivation.php:1656
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
-#: ../pluginactivation.php:1642
+#: ../pluginactivation.php:1657
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: ../pluginactivation.php:1643
+#: ../pluginactivation.php:1658
 #, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: ../pluginactivation.php:1644
+#: ../pluginactivation.php:1659
 msgid "All installations have been completed."
 msgstr ""
 
-#: ../pluginactivation.php:1645
+#: ../pluginactivation.php:1660
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../header.php:68
+#: ../header.php:54
 msgid "Toggle navigation"
 msgstr ""
 
-#: ../header.php:86
+#: ../header.php:72
 msgid "No menu assigned!"
 msgstr ""
 
-#: ../header.php:94
+#: ../header.php:80
 msgid "Your cart."
 msgstr ""
 
-#: ../header.php:99
+#: ../header.php:85
 msgid "was successfully added to your cart."
 msgstr ""
 
-#: ../header.php:135
+#: ../header.php:121
 msgid "Search members"
 msgstr ""
 
-#: ../header.php:149 ../functions.php:308
+#: ../header.php:134 ../functions.php:259
 msgid "Search: "
 msgstr ""
 
-#: ../header.php:173 ../header.php:174 ../functions.php:318
+#: ../header.php:158 ../header.php:175 ../functions.php:269
 msgid "Tag: "
 msgstr ""
 
-#: ../header.php:173 ../header.php:174 ../functions.php:301
+#: ../header.php:158 ../header.php:175 ../functions.php:252
 msgid "Category: "
 msgstr ""
 
-#: ../header.php:173 ../header.php:174
+#: ../header.php:158 ../header.php:175
 msgid "Author: "
 msgstr ""
 
-#: ../header.php:173 ../header.php:174
-msgid "Archive: "
+#: ../header.php:160 ../header.php:177 ../functions.php:278
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../header.php:162 ../header.php:179 ../functions.php:280
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../header.php:162 ../header.php:179 ../functions.php:280
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../header.php:164 ../header.php:181 ../functions.php:282
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../header.php:164 ../header.php:181 ../functions.php:282
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../header.php:169 ../header.php:186
+msgid "Forums"
+msgstr ""
+
+#: ../header.php:172 ../header.php:189 ../functions.php:284
+msgid "Blog Archives"
 msgstr ""
 
 #: ../404.php:13
@@ -466,53 +495,53 @@ msgstr ""
 msgid "Homepage"
 msgstr ""
 
-#: ../blog-roll.php:45 ../blog-single.php:6 ../widgets/latest_posts/latest_posts.
-#: php:176 ../vc_templates/vc_column_blog.php:84
+#: ../blog-roll.php:40 ../blog-single.php:6 ../widgets/latest_posts/latest_posts.
+#: php:253 ../vc_templates/vc_column_blog.php:78
 msgid "View all posts by"
 msgstr ""
 
-#: ../blog-roll.php:52 ../blog-roll.php:55 ../blog-single.php:13 ../blog-single.
-#: php:16 ../vc_templates/vc_column_blog.php:91 ../vc_templates/vc_column_blog.
-#: php:94
+#: ../blog-roll.php:47 ../blog-roll.php:50 ../blog-single.php:13 ../blog-single.
+#: php:16 ../vc_templates/vc_column_blog.php:85 ../vc_templates/vc_column_blog.
+#: php:88
 msgid "0 Comments"
 msgstr ""
 
-#: ../blog-roll.php:52 ../blog-roll.php:55 ../blog-single.php:13 ../blog-single.
-#: php:16 ../vc_templates/vc_column_blog.php:91 ../vc_templates/vc_column_blog.
-#: php:94
+#: ../blog-roll.php:47 ../blog-roll.php:50 ../blog-single.php:13 ../blog-single.
+#: php:16 ../vc_templates/vc_column_blog.php:85 ../vc_templates/vc_column_blog.
+#: php:88
 msgid "1 Comment"
 msgstr ""
 
-#: ../blog-roll.php:52 ../blog-roll.php:55 ../blog-single.php:13 ../blog-single.
-#: php:16 ../vc_templates/vc_column_blog.php:91 ../vc_templates/vc_column_blog.
-#: php:94
+#: ../blog-roll.php:47 ../blog-roll.php:50 ../blog-single.php:13 ../blog-single.
+#: php:16 ../vc_templates/vc_column_blog.php:85 ../vc_templates/vc_column_blog.
+#: php:88
 #, php-format
 msgid "% Comments"
 msgstr ""
 
-#: ../blog-roll.php:54 ../blog-single.php:15 ../vc_templates/vc_column_news.php:
-#: 214 ../vc_templates/vc_column_news_tabbed.php:262 ..
-#: /vc_templates/vc_column_news_horizontal.php:233 ../vc_templates/vc_column_blog.
-#: php:93
+#: ../blog-roll.php:49 ../blog-single.php:15 ../vc_templates/vc_column_news.php:
+#: 282 ../vc_templates/vc_column_news_tabbed.php:325 ..
+#: /vc_templates/vc_column_news_horizontal.php:296 ../vc_templates/vc_column_blog.
+#: php:87
 msgid "No comments in this post"
 msgstr ""
 
-#: ../blog-roll.php:54 ../blog-single.php:15 ../vc_templates/vc_column_news.php:
-#: 214 ../vc_templates/vc_column_news_tabbed.php:262 ..
-#: /vc_templates/vc_column_news_horizontal.php:233 ../vc_templates/vc_column_blog.
-#: php:93
+#: ../blog-roll.php:49 ../blog-single.php:15 ../vc_templates/vc_column_news.php:
+#: 282 ../vc_templates/vc_column_news_tabbed.php:325 ..
+#: /vc_templates/vc_column_news_horizontal.php:296 ../vc_templates/vc_column_blog.
+#: php:87
 msgid "One comment in this post"
 msgstr ""
 
-#: ../blog-roll.php:54 ../blog-single.php:15 ../vc_templates/vc_column_news.php:
-#: 214 ../vc_templates/vc_column_news_tabbed.php:262 ..
-#: /vc_templates/vc_column_news_horizontal.php:233 ../vc_templates/vc_column_blog.
-#: php:93
+#: ../blog-roll.php:49 ../blog-single.php:15 ../vc_templates/vc_column_news.php:
+#: 282 ../vc_templates/vc_column_news_tabbed.php:325 ..
+#: /vc_templates/vc_column_news_horizontal.php:296 ../vc_templates/vc_column_blog.
+#: php:87
 #, php-format
 msgid "% comments in this post"
 msgstr ""
 
-#: ../blog-roll.php:65 ../vc_templates/vc_column_blog.php:104
+#: ../blog-roll.php:60 ../vc_templates/vc_column_blog.php:98
 msgid "Read more"
 msgstr ""
 
@@ -614,7 +643,7 @@ msgstr ""
 msgid "Add link to your Rss feed."
 msgstr ""
 
-#: ../vc.php:252 ../themeOptions/options.php:314
+#: ../vc.php:252 ../themeOptions/options.php:318
 msgid "Dribbble link"
 msgstr ""
 
@@ -622,7 +651,7 @@ msgstr ""
 msgid "Add link to your Dribbble profile."
 msgstr ""
 
-#: ../vc.php:260 ../themeOptions/options.php:324
+#: ../vc.php:260 ../themeOptions/options.php:328
 msgid "Vimeo link"
 msgstr ""
 
@@ -630,7 +659,7 @@ msgstr ""
 msgid "Add link to your Vimeo profile."
 msgstr ""
 
-#: ../vc.php:268 ../themeOptions/options.php:334
+#: ../vc.php:268 ../themeOptions/options.php:338
 msgid "Youtube link"
 msgstr ""
 
@@ -638,7 +667,7 @@ msgstr ""
 msgid "Add link to your Youtube profile."
 msgstr ""
 
-#: ../vc.php:276 ../themeOptions/options.php:344
+#: ../vc.php:276 ../themeOptions/options.php:348
 msgid "Twitch link"
 msgstr ""
 
@@ -706,195 +735,174 @@ msgstr ""
 msgid "Add title to your comments block."
 msgstr ""
 
-#: ../functions.php:130
+#: ../functions.php:107
 msgid "Home sidebar"
 msgstr ""
 
-#: ../functions.php:132
+#: ../functions.php:109
 msgid "Widgets in this area will be shown in the home page."
 msgstr ""
 
-#: ../functions.php:139
+#: ../functions.php:116
 msgid "General sidebar"
 msgstr ""
 
-#: ../functions.php:141
+#: ../functions.php:118
 msgid "General sidebar for use with page builder."
 msgstr ""
 
-#: ../functions.php:148
+#: ../functions.php:125
 msgid "Blog sidebar"
 msgstr ""
 
-#: ../functions.php:150
+#: ../functions.php:127
 msgid "Widgets in this area will be shown in the blog sidebar."
 msgstr ""
 
-#: ../functions.php:157
+#: ../functions.php:134
 msgid "Footer area widgets"
 msgstr ""
 
-#: ../functions.php:159
+#: ../functions.php:136
 msgid "Widgets in this area will be shown in the footer."
 msgstr ""
 
-#: ../functions.php:170
+#: ../functions.php:147
 msgid "Widgets in this area will be shown in the WooCommerce sidebar."
 msgstr ""
 
-#: ../functions.php:181
+#: ../functions.php:158
 msgid "Widgets in this area will be shown in the BuddyPress sidebar."
 msgstr ""
 
-#: ../functions.php:263
+#: ../functions.php:214
 msgid "Header Menu"
 msgstr ""
 
-#: ../functions.php:264
+#: ../functions.php:215
 msgid "Top Menu"
 msgstr ""
 
-#: ../functions.php:297
+#: ../functions.php:248
 msgid "Home"
 msgstr ""
 
-#: ../functions.php:321
+#: ../functions.php:272
 msgid "Shop"
 msgstr ""
 
-#: ../functions.php:328
-msgid "Archive"
-msgstr ""
-
-#: ../functions.php:512
+#: ../functions.php:529
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: ../functions.php:525
+#: ../functions.php:542
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
-#: ../functions.php:664
+#: ../functions.php:678
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:682
+#: ../functions.php:696
 #, php-format
 msgid "By %1$s on %2$s at %3$s"
 msgstr ""
 
-#: ../functions.php:686
+#: ../functions.php:700
 msgid "Edit"
 msgstr ""
 
-#: ../functions.php:687
+#: ../functions.php:701
 msgid "Your trackback is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:911
-msgid "Video url"
+#: ../functions.php:726
+msgid "Slider shortcode (works with \"Homepage\" template only)"
 msgstr ""
 
-#: ../functions.php:917
-msgid "Put your embed video URL here"
+#: ../functions.php:732
+msgid "Paste your slider shortcode here."
 msgstr ""
 
-#. Approved comment
-#: ../functions.php:930
-msgid "success"
-msgstr ""
-
-#: ../functions.php:936
-msgid "error"
-msgstr ""
-
-#: ../functions.php:1012
+#: ../functions.php:987
 msgid "Color"
 msgstr ""
 
-#: ../functions.php:1014
+#: ../functions.php:989
 msgid "Pick a Category Color"
 msgstr ""
 
-#: ../functions.php:1027
-msgid "Category Name Background Color"
+#: ../functions.php:1002
+msgid "Category Color"
 msgstr ""
 
 #. Translators: If there are characters in your language that are not supported
 #. by chosen font(s), translate this to 'off'. Do not translate into your own language.
-#: ../functions.php:1223
+#: ../functions.php:1198
 msgctxt "Google font: on or off"
 msgid "on"
 msgstr ""
 
-#: ../short-comments-blog.php:45
+#: ../short-comments-blog.php:57
 msgid "Name*"
 msgstr ""
 
-#: ../short-comments-blog.php:49
+#: ../short-comments-blog.php:61
 msgid "Email*"
 msgstr ""
 
-#: ../short-comments-blog.php:58
+#: ../short-comments-blog.php:70
 msgid "Leave a comment..."
 msgstr ""
 
-#: ../short-comments-blog.php:61
+#: ../short-comments-blog.php:73
 msgid "Submit comment"
 msgstr ""
 
-#: ../post_templates.php:50
+#: ../post_templates.php:71
 msgid "Sidebar position"
 msgstr ""
 
-#: ../post_templates.php:62
+#: ../post_templates.php:83
 msgid "Post Template"
 msgstr ""
 
-#: ../theme-functions/page-templates.php:26
-msgid "Clan challenge"
-msgstr ""
-
-#: ../theme-functions/page-templates.php:34
-msgid "Registration"
-msgstr ""
-
 #: ../widgets/latest_posts/latest_posts.php:11 ..
-#: /widgets/latest_posts/latest_posts.php:209
+#: /widgets/latest_posts/latest_posts.php:286
 msgid "SW Latest Posts"
 msgstr ""
 
-#: ../widgets/latest_posts/latest_posts.php:175
+#: ../widgets/latest_posts/latest_posts.php:252
 msgid "By"
 msgstr ""
 
-#: ../widgets/latest_posts/latest_posts.php:186 ../widgets/rating/popular-widget.
-#: php:179
+#: ../widgets/latest_posts/latest_posts.php:263 ../widgets/rating/popular-widget.
+#: php:256
 msgid "No popular posts!"
 msgstr ""
 
-#: ../widgets/latest_posts/latest_posts.php:217 ../widgets/rating/popular-widget.
-#: php:210 ../widgets/latest_comments/latest_comments.php:65
+#: ../widgets/latest_posts/latest_posts.php:294 ../widgets/rating/popular-widget.
+#: php:287 ../widgets/latest_comments/latest_comments.php:75
 msgid "Title:"
 msgstr ""
 
-#: ../widgets/latest_posts/latest_posts.php:221 ../widgets/rating/popular-widget.
-#: php:214
+#: ../widgets/latest_posts/latest_posts.php:298 ../widgets/rating/popular-widget.
+#: php:291
 msgid "Category:"
 msgstr ""
 
-#: ../widgets/latest_posts/latest_posts.php:222 ../widgets/rating/popular-widget.
-#: php:215
+#: ../widgets/latest_posts/latest_posts.php:299 ../widgets/rating/popular-widget.
+#: php:292
 msgid "All categories"
 msgstr ""
 
-#: ../widgets/latest_posts/latest_posts.php:225 ../widgets/rating/popular-widget.
-#: php:218
+#: ../widgets/latest_posts/latest_posts.php:302 ../widgets/rating/popular-widget.
+#: php:295
 msgid "No. of Posts:"
 msgstr ""
 
-#: ../widgets/rating/popular-widget.php:11 ../widgets/rating/popular-widget.php:202
+#: ../widgets/rating/popular-widget.php:11 ../widgets/rating/popular-widget.php:279
 msgid "SW Popular Posts"
 msgstr ""
 
@@ -906,15 +914,15 @@ msgstr ""
 msgid "SW Instagram"
 msgstr ""
 
-#: ../widgets/instagram/instagram.php:58
+#: ../widgets/instagram/instagram.php:68
 msgid "Title :"
 msgstr ""
 
-#: ../widgets/instagram/instagram.php:61
+#: ../widgets/instagram/instagram.php:71
 msgid "Username :"
 msgstr ""
 
-#: ../widgets/instagram/instagram.php:64
+#: ../widgets/instagram/instagram.php:74
 msgid "Number of Photos :"
 msgstr ""
 
@@ -926,63 +934,16 @@ msgstr ""
 msgid "SW Latest Comments"
 msgstr ""
 
-#: ../widgets/latest_comments/latest_comments.php:57
+#: ../widgets/latest_comments/latest_comments.php:47
+msgid "says:"
+msgstr ""
+
+#: ../widgets/latest_comments/latest_comments.php:67
 msgid "Latest Comments"
 msgstr ""
 
-#: ../widgets/latest_comments/latest_comments.php:70
+#: ../widgets/latest_comments/latest_comments.php:80
 msgid "Number of comments"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:14
-msgid "Displays your latest twitter.com updates"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:37
-msgid "Twitter user: @"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:38
-msgid "Show"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:38
-msgid "twitter updates"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:39
-msgid "Widget title:"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:40
-msgid "Include replies"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:42
-msgid ""
-"If your tweets doesn&#8217;t show up with this Application settings please "
-"register another twitter APP on https://apps.twitter.com/app"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:44
-msgid "Api key:"
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:45
-msgid "Api key secret: "
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:46
-msgid "Token: "
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:47
-msgid "Token secret: "
-msgstr ""
-
-#: ../widgets/latest_twitter/latest_twitter_widget.php:164
-#, php-format
-msgid "Follow %s on Twitter"
 msgstr ""
 
 #: ../themeOptions/rating.php:6
@@ -1048,436 +1009,440 @@ msgid ""
 msgstr ""
 
 #: ../themeOptions/options.php:46
-msgid "Upload Your Favicon"
-msgstr ""
-
-#: ../themeOptions/options.php:47
-msgid "Upload your Favicon. We recommend keeping it within reasonable size. "
-msgstr ""
-
-#: ../themeOptions/options.php:51
-msgid "Login button in the menu"
-msgstr ""
-
-#: ../themeOptions/options.php:52
-msgid "Enable the login avatar in the menu"
-msgstr ""
-
-#: ../themeOptions/options.php:56
 msgid "Image appear effect"
 msgstr ""
 
-#: ../themeOptions/options.php:57
+#: ../themeOptions/options.php:47
 msgid "Enable the image appearing effect when scrolling down."
 msgstr ""
 
-#: ../themeOptions/options.php:63
+#: ../themeOptions/options.php:53
 msgid "Contact email"
 msgstr ""
 
-#: ../themeOptions/options.php:64
+#: ../themeOptions/options.php:54
 msgid "Add your contact email here."
 msgstr ""
 
-#: ../themeOptions/options.php:68
+#: ../themeOptions/options.php:58
 msgid "News Ticker"
 msgstr ""
 
-#: ../themeOptions/options.php:70
+#: ../themeOptions/options.php:60
 msgid "Show news ticker"
 msgstr ""
 
-#: ../themeOptions/options.php:71
+#: ../themeOptions/options.php:61
 msgid "Enable news ticker."
 msgstr ""
 
-#: ../themeOptions/options.php:75
+#: ../themeOptions/options.php:65
 msgid "Ticker title"
 msgstr ""
 
-#: ../themeOptions/options.php:76
+#: ../themeOptions/options.php:66
 msgid "Add ticker title."
 msgstr ""
 
-#: ../themeOptions/options.php:81
+#: ../themeOptions/options.php:71
 msgid "Ticker items"
 msgstr ""
 
-#: ../themeOptions/options.php:82
+#: ../themeOptions/options.php:72
 msgid "Add ticker items. Use || sign to separate items."
 msgstr ""
 
-#: ../themeOptions/options.php:91 ../themeOptions/options.php:93 ../addons/wp-owl-
-#: carousel/wp_owl_carousel.php:61 ../addons/wp-owl-carousel/CMB2/tests/test-cmb-
-#: field.php:170 ../addons/wp-owl-carousel/CMB2/includes/CMB2_Field.php:908 ..
-#: /addons/wp-owl-carousel/CMB2/includes/CMB2_Field.php:912
+#: ../themeOptions/options.php:81 ../themeOptions/options.php:83 ../addons/wp-owl-
+#: carousel/wp_owl_carousel.php:61 ../addons/wp-owl-
+#: carousel/CMB2/includes/CMB2_Field.php:908 ../addons/wp-owl-
+#: carousel/CMB2/includes/CMB2_Field.php:912
 msgid "None"
 msgstr ""
 
-#: ../themeOptions/options.php:92 ../themeOptions/options.php:93 ../addons/wp-owl-
+#: ../themeOptions/options.php:82 ../themeOptions/options.php:83 ../addons/wp-owl-
 #: carousel/wp_owl_carousel.php:62
 msgid "All posts"
 msgstr ""
 
-#: ../themeOptions/options.php:95
+#: ../themeOptions/options.php:85
 msgid "Select category"
 msgstr ""
 
-#: ../themeOptions/options.php:96
+#: ../themeOptions/options.php:86
 msgid "It will display post titles from that category."
 msgstr ""
 
-#: ../themeOptions/options.php:104
+#: ../themeOptions/options.php:94
 msgid "Archive page template"
 msgstr ""
 
-#: ../themeOptions/options.php:108
+#: ../themeOptions/options.php:98
 msgid "Select category/archive page template"
 msgstr ""
 
-#: ../themeOptions/options.php:109
+#: ../themeOptions/options.php:99
 msgid "Choose template for your category/archive page."
 msgstr ""
 
-#: ../themeOptions/options.php:115
+#: ../themeOptions/options.php:105
 msgid "Full width"
 msgstr ""
 
-#: ../themeOptions/options.php:116
+#: ../themeOptions/options.php:106
 msgid "Right Sidebar"
 msgstr ""
 
-#: ../themeOptions/options.php:117
+#: ../themeOptions/options.php:107
 msgid "Left Sidebar"
 msgstr ""
 
-#: ../themeOptions/options.php:124 ../themeOptions/options.php:126
+#: ../themeOptions/options.php:111 ../addons/wp-owl-carousel/wp_owl_carousel.php:68
+msgid "Posts"
+msgstr ""
+
+#: ../themeOptions/options.php:115
+msgid "Select rating type"
+msgstr ""
+
+#: ../themeOptions/options.php:116
+msgid "Choose rating type for your posts"
+msgstr ""
+
+#: ../themeOptions/options.php:122
+msgid "Numbers"
+msgstr ""
+
+#: ../themeOptions/options.php:123
+msgid "Stars"
+msgstr ""
+
+#: ../themeOptions/options.php:128 ../themeOptions/options.php:130
 msgid "SEO"
 msgstr ""
 
-#: ../themeOptions/options.php:128
+#: ../themeOptions/options.php:132
 msgid "Home description"
 msgstr ""
 
-#: ../themeOptions/options.php:129
+#: ../themeOptions/options.php:133
 msgid "Enter home description."
 msgstr ""
 
-#: ../themeOptions/options.php:133
+#: ../themeOptions/options.php:137
 msgid "Keywords"
 msgstr ""
 
-#: ../themeOptions/options.php:134
+#: ../themeOptions/options.php:138
 msgid "Enter keywords comma separated."
 msgstr ""
 
-#: ../themeOptions/options.php:142
+#: ../themeOptions/options.php:146
 msgid "Customize"
 msgstr ""
 
-#: ../themeOptions/options.php:150
+#: ../themeOptions/options.php:154
 msgid "Backgrounds"
 msgstr ""
 
-#: ../themeOptions/options.php:153
+#: ../themeOptions/options.php:157
 msgid "Top background"
 msgstr ""
 
-#: ../themeOptions/options.php:154
+#: ../themeOptions/options.php:158
 msgid "Background for the header of the site."
 msgstr ""
 
-#: ../themeOptions/options.php:159
+#: ../themeOptions/options.php:163
 msgid "Fixed background"
 msgstr ""
 
-#: ../themeOptions/options.php:160
+#: ../themeOptions/options.php:164
 msgid "Set background to fixed position."
 msgstr ""
 
-#: ../themeOptions/options.php:164
+#: ../themeOptions/options.php:168
 msgid "Footer background"
 msgstr ""
 
-#: ../themeOptions/options.php:165
+#: ../themeOptions/options.php:169
 msgid "Background for the footer of the site."
 msgstr ""
 
-#: ../themeOptions/options.php:170
+#: ../themeOptions/options.php:174
 msgid "Footer background repeat"
 msgstr ""
 
-#: ../themeOptions/options.php:171
+#: ../themeOptions/options.php:175
 msgid "You could choose to repeat the background image if you want to use a pattern."
 msgstr ""
 
-#: ../themeOptions/options.php:182
+#: ../themeOptions/options.php:186
 msgid "Background colour"
 msgstr ""
 
-#: ../themeOptions/options.php:183
+#: ../themeOptions/options.php:187
 msgid "Colour for the background."
 msgstr ""
 
-#: ../themeOptions/options.php:190
+#: ../themeOptions/options.php:194
 msgid "Background tint"
 msgstr ""
 
-#: ../themeOptions/options.php:191
+#: ../themeOptions/options.php:195
 msgid "Enable background overlay color."
 msgstr ""
 
-#: ../themeOptions/options.php:196
+#: ../themeOptions/options.php:200
 msgid "Background tint color"
 msgstr ""
 
-#: ../themeOptions/options.php:197
+#: ../themeOptions/options.php:201
 msgid "Give a tint colour to the background image."
 msgstr ""
 
-#: ../themeOptions/options.php:207
+#: ../themeOptions/options.php:211
 msgid "Colours"
 msgstr ""
 
-#: ../themeOptions/options.php:210
+#: ../themeOptions/options.php:214
 msgid "Primary Colour"
 msgstr ""
 
-#: ../themeOptions/options.php:211
+#: ../themeOptions/options.php:215
 msgid ""
 "Affects different background and items of the site like links, some buttons, "
 "etc."
 msgstr ""
 
-#: ../themeOptions/options.php:219
+#: ../themeOptions/options.php:223
 msgid "Secondary Colour"
 msgstr ""
 
-#: ../themeOptions/options.php:220
+#: ../themeOptions/options.php:224
 msgid "Affects additional elements of the site."
 msgstr ""
 
-#: ../themeOptions/options.php:231 ../themeOptions/options.php:232
+#: ../themeOptions/options.php:235 ../themeOptions/options.php:236
 msgid "Footer"
 msgstr ""
 
-#: ../themeOptions/options.php:234
+#: ../themeOptions/options.php:238
 msgid "Copyright"
 msgstr ""
 
-#: ../themeOptions/options.php:235
+#: ../themeOptions/options.php:239
 msgid "You can use HTML code in here."
 msgstr ""
 
-#: ../themeOptions/options.php:239
+#: ../themeOptions/options.php:243
 msgid "Terms link name"
 msgstr ""
 
-#: ../themeOptions/options.php:240
+#: ../themeOptions/options.php:244
 msgid "Enter your terms link name."
 msgstr ""
 
-#: ../themeOptions/options.php:244
+#: ../themeOptions/options.php:248
 msgid "Terms & Conditions"
 msgstr ""
 
-#: ../themeOptions/options.php:245
+#: ../themeOptions/options.php:249
 msgid "Add link to your t&c file"
 msgstr ""
 
-#: ../themeOptions/options.php:253 ../themeOptions/options.php:255
+#: ../themeOptions/options.php:257 ../themeOptions/options.php:259
 msgid "Social Media"
 msgstr ""
 
-#: ../themeOptions/options.php:257
+#: ../themeOptions/options.php:261
 msgid "Enable Twitter"
 msgstr ""
 
-#: ../themeOptions/options.php:258
+#: ../themeOptions/options.php:262
 msgid "Show or hide the Twitter icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:262
+#: ../themeOptions/options.php:266
 msgid "Twitter Link"
 msgstr ""
 
-#: ../themeOptions/options.php:263
+#: ../themeOptions/options.php:267
 msgid "Paste your twitter link here."
 msgstr ""
 
-#: ../themeOptions/options.php:267
+#: ../themeOptions/options.php:271
 msgid "Enable Facebook"
 msgstr ""
 
-#: ../themeOptions/options.php:268
+#: ../themeOptions/options.php:272
 msgid "Show or hide the Facebook icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:272
+#: ../themeOptions/options.php:276
 msgid "Facebook Link"
 msgstr ""
 
-#: ../themeOptions/options.php:273
+#: ../themeOptions/options.php:277
 msgid "Paste your facebook link here."
 msgstr ""
 
-#: ../themeOptions/options.php:277
+#: ../themeOptions/options.php:281
 msgid "Enable Steam"
 msgstr ""
 
-#: ../themeOptions/options.php:278
+#: ../themeOptions/options.php:282
 msgid "Show or hide the Steam icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:282
+#: ../themeOptions/options.php:286
 msgid "Steam Link"
 msgstr ""
 
-#: ../themeOptions/options.php:283
+#: ../themeOptions/options.php:287
 msgid "Paste your Steam link here."
 msgstr ""
 
-#: ../themeOptions/options.php:288
+#: ../themeOptions/options.php:292
 msgid "Enable Pinterest"
 msgstr ""
 
-#: ../themeOptions/options.php:289
+#: ../themeOptions/options.php:293
 msgid "Show or hide the Pinterest icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:293
+#: ../themeOptions/options.php:297
 msgid "Pinterest Link"
 msgstr ""
 
-#: ../themeOptions/options.php:294
+#: ../themeOptions/options.php:298
 msgid "Paste your pinterest link here."
 msgstr ""
 
-#: ../themeOptions/options.php:299
+#: ../themeOptions/options.php:303
 msgid "Enable Google+"
 msgstr ""
 
-#: ../themeOptions/options.php:300
+#: ../themeOptions/options.php:304
 msgid "Show or hide the Google+ icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:304
+#: ../themeOptions/options.php:308
 msgid "Google+ Link"
 msgstr ""
 
-#: ../themeOptions/options.php:305
+#: ../themeOptions/options.php:309
 msgid "Paste your google+ link here."
 msgstr ""
 
-#: ../themeOptions/options.php:309
+#: ../themeOptions/options.php:313
 msgid "Enable dribbble"
 msgstr ""
 
-#: ../themeOptions/options.php:310
+#: ../themeOptions/options.php:314
 msgid "Show or hide the dribbble icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:315
+#: ../themeOptions/options.php:319
 msgid "Paste your dribbble link here."
 msgstr ""
 
-#: ../themeOptions/options.php:319
+#: ../themeOptions/options.php:323
 msgid "Enable vimeo"
 msgstr ""
 
-#: ../themeOptions/options.php:320
+#: ../themeOptions/options.php:324
 msgid "Show or hide the vimeo icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:325
+#: ../themeOptions/options.php:329
 msgid "Paste your vimeo link here."
 msgstr ""
 
-#: ../themeOptions/options.php:329
+#: ../themeOptions/options.php:333
 msgid "Enable youtube"
 msgstr ""
 
-#: ../themeOptions/options.php:330
+#: ../themeOptions/options.php:334
 msgid "Show or hide the youtube icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:335
+#: ../themeOptions/options.php:339
 msgid "Paste your youtube link here."
 msgstr ""
 
-#: ../themeOptions/options.php:339
+#: ../themeOptions/options.php:343
 msgid "Enable twitch"
 msgstr ""
 
-#: ../themeOptions/options.php:340
+#: ../themeOptions/options.php:344
 msgid "Show or hide the twitch icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:345
+#: ../themeOptions/options.php:349
 msgid "Paste your twitch link here."
 msgstr ""
 
-#: ../themeOptions/options.php:350
+#: ../themeOptions/options.php:354
 msgid "Enable RSS"
 msgstr ""
 
-#: ../themeOptions/options.php:351
+#: ../themeOptions/options.php:355
 msgid "Show or hide the RSS icon that shows on the footer section."
 msgstr ""
 
-#: ../themeOptions/options.php:355
+#: ../themeOptions/options.php:359
 msgid "RSS Link"
 msgstr ""
 
-#: ../themeOptions/options.php:356
+#: ../themeOptions/options.php:360
 msgid "Paste your RSS link here."
 msgstr ""
 
-#: ../themeOptions/options.php:362 ../themeOptions/options.php:364
+#: ../themeOptions/options.php:366 ../themeOptions/options.php:368
 msgid "WooCommerce"
 msgstr ""
 
-#: ../themeOptions/options.php:367
+#: ../themeOptions/options.php:371
 msgid "Main shop page sidebar"
 msgstr ""
 
-#: ../themeOptions/options.php:368
+#: ../themeOptions/options.php:372
 msgid "Choose page layout that you want to use on main WooCommerce page."
 msgstr ""
 
-#: ../themeOptions/options.php:380
+#: ../themeOptions/options.php:384
 msgid "Single product page sidebar"
 msgstr ""
 
-#: ../themeOptions/options.php:381
+#: ../themeOptions/options.php:385
 msgid "Choose page layout that you want to use on single product WooCommerce page."
 msgstr ""
 
-#: ../themeOptions/options.php:393 ../themeOptions/options.php:395
+#: ../themeOptions/options.php:397 ../themeOptions/options.php:399
 msgid "One click install"
 msgstr ""
 
-#: ../themeOptions/options.php:397
+#: ../themeOptions/options.php:401
 msgid "demo install"
 msgstr ""
 
-#: ../themeOptions/options.php:398
+#: ../themeOptions/options.php:402
 msgid "Click to install pre-inserted demo contents."
 msgstr ""
 
-#: ../themeOptions/admin/options-medialibrary-uploader.php:158
+#: ../themeOptions/admin/options-medialibrary-uploader.php:168
 msgid "Upload"
 msgstr ""
 
-#: ../themeOptions/admin/options-medialibrary-uploader.php:180
+#: ../themeOptions/admin/options-medialibrary-uploader.php:190
 msgid "View File"
 msgstr ""
 
-#: ../themeOptions/admin/options-medialibrary-uploader.php:248
+#: ../themeOptions/admin/options-medialibrary-uploader.php:258
 msgid "Gallery"
 msgstr ""
 
-#: ../themeOptions/admin/options-medialibrary-uploader.php:248
+#: ../themeOptions/admin/options-medialibrary-uploader.php:258
 msgid "Previously Uploaded"
 msgstr ""
 
@@ -1525,33 +1490,37 @@ msgstr ""
 msgid "Fixed in Place"
 msgstr ""
 
-#: ../themeOptions/admin/options-framework.php:186 ../themeOptions/admin/options-
-#: framework.php:215
+#: ../themeOptions/admin/options-framework.php:248 ../themeOptions/admin/options-
+#: framework.php:277
 msgid "Save All Changes"
 msgstr ""
 
-#: ../themeOptions/admin/options-framework.php:216
+#: ../themeOptions/admin/options-framework.php:278
 msgid "Restore Defaults Options"
 msgstr ""
 
-#: ../themeOptions/admin/options-framework.php:216
+#: ../themeOptions/admin/options-framework.php:278
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
 
-#: ../themeOptions/admin/options-framework.php:244
+#: ../themeOptions/admin/options-framework.php:306
 msgid "Default options restored."
 msgstr ""
 
-#: ../themeOptions/admin/options-framework.php:279
+#: ../themeOptions/admin/options-framework.php:341
 msgid "Options saved."
 msgstr ""
 
-#: ../themeOptions/admin/options-framework.php:328
+#: ../themeOptions/admin/options-framework.php:390
 msgid "Theme Options"
 msgstr ""
 
 #: ../themeOptions/admin/options-interface.php:135
 msgid "No categories!"
+msgstr ""
+
+#: ../themeOptions/admin/options-interface.php:386
+msgid "Please wait, the content is importing...."
 msgstr ""
 
 #: ../themeOptions/admin/country/usercountry.php:261
@@ -2526,29 +2495,29 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: ../vc_templates/vc_column_news.php:209 ../vc_templates/vc_column_news_tabbed.
-#: php:257 ../vc_templates/vc_column_news_horizontal.php:228
+#: ../vc_templates/vc_column_news.php:277 ../vc_templates/vc_column_news_tabbed.
+#: php:320 ../vc_templates/vc_column_news_horizontal.php:291
 msgid "on"
 msgstr ""
 
-#: ../vc_templates/vc_column_news.php:209 ../vc_templates/vc_column_news_tabbed.
-#: php:257 ../vc_templates/vc_column_news_horizontal.php:228
+#: ../vc_templates/vc_column_news.php:277 ../vc_templates/vc_column_news_tabbed.
+#: php:320 ../vc_templates/vc_column_news_horizontal.php:291
 msgid "with"
 msgstr ""
 
-#: ../vc_templates/vc_column_news.php:212 ../vc_templates/vc_column_news.php:215 .
-#: ./vc_templates/vc_column_news_tabbed.php:260 ..
-#: /vc_templates/vc_column_news_tabbed.php:263 ..
-#: /vc_templates/vc_column_news_horizontal.php:231 ..
-#: /vc_templates/vc_column_news_horizontal.php:234
+#: ../vc_templates/vc_column_news.php:280 ../vc_templates/vc_column_news.php:283 .
+#: ./vc_templates/vc_column_news_tabbed.php:323 ..
+#: /vc_templates/vc_column_news_tabbed.php:326 ..
+#: /vc_templates/vc_column_news_horizontal.php:294 ..
+#: /vc_templates/vc_column_news_horizontal.php:297
 msgid "1"
 msgstr ""
 
-#: ../vc_templates/vc_column_news.php:212 ../vc_templates/vc_column_news.php:215 .
-#: ./vc_templates/vc_column_news_tabbed.php:260 ..
-#: /vc_templates/vc_column_news_tabbed.php:263 ..
-#: /vc_templates/vc_column_news_horizontal.php:231 ..
-#: /vc_templates/vc_column_news_horizontal.php:234
+#: ../vc_templates/vc_column_news.php:280 ../vc_templates/vc_column_news.php:283 .
+#: ./vc_templates/vc_column_news_tabbed.php:323 ..
+#: /vc_templates/vc_column_news_tabbed.php:326 ..
+#: /vc_templates/vc_column_news_horizontal.php:294 ..
+#: /vc_templates/vc_column_news_horizontal.php:297
 msgid "%"
 msgstr ""
 
@@ -2586,10 +2555,6 @@ msgstr ""
 
 #: ../addons/wp-owl-carousel/wp_owl_carousel.php:57
 msgid "Owl Carousel"
-msgstr ""
-
-#: ../addons/wp-owl-carousel/wp_owl_carousel.php:68
-msgid "Posts"
 msgstr ""
 
 #: ../addons/wp-owl-carousel/wp_owl_carousel.php:68
@@ -2634,11 +2599,11 @@ msgstr ""
 msgid "Paste this shortcode into a post or a page: "
 msgstr ""
 
-#: ../addons/wp-owl-carousel/wp_owl_carousel.php:316
+#: ../addons/wp-owl-carousel/wp_owl_carousel.php:369
 msgid "by "
 msgstr ""
 
-#: ../addons/wp-owl-carousel/wp_owl_carousel.php:317
+#: ../addons/wp-owl-carousel/wp_owl_carousel.php:370
 msgid "View all posts by "
 msgstr ""
 
@@ -3160,59 +3125,27 @@ msgstr ""
 msgid "Site Background Color"
 msgstr ""
 
-#: ../addons/wp-owl-carousel/CMB2/tests/test-cmb-types.php:147 ../addons/wp-owl-
-#: carousel/CMB2/tests/test-cmb-types.php:155 ../addons/wp-owl-
-#: carousel/CMB2/tests/test-cmb-types.php:715 ../addons/wp-owl-
-#: carousel/CMB2/tests/test-cmb-types.php:740 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Types.php:353 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Types.php:986 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_hookup.php:183
-msgid "Remove"
-msgstr ""
-
-#: ../addons/wp-owl-carousel/CMB2/tests/test-cmb-types.php:691 ../addons/wp-owl-
-#: carousel/CMB2/tests/test-cmb-types.php:717 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Types.php:835
-msgid "Add or Upload Files"
-msgstr ""
-
-#: ../addons/wp-owl-carousel/CMB2/tests/test-cmb-types.php:714 ../addons/wp-owl-
-#: carousel/CMB2/tests/test-cmb-types.php:739 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Types.php:984 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_hookup.php:185
-msgid "Download"
-msgstr ""
-
-#: ../addons/wp-owl-carousel/CMB2/tests/test-cmb-types.php:716 ../addons/wp-owl-
-#: carousel/CMB2/tests/test-cmb-types.php:741 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Types.php:981 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_hookup.php:184
-msgid "File:"
-msgstr ""
-
-#: ../addons/wp-owl-carousel/CMB2/tests/test-cmb-types.php:727 ../addons/wp-owl-
-#: carousel/CMB2/tests/test-cmb-types.php:742 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Types.php:893
-msgid "Add or Upload File"
-msgstr ""
-
-#: ../addons/wp-owl-carousel/CMB2/tests/test-cmb-types.php:766 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Ajax.php:133
-msgid "Remove Embed"
-msgstr ""
-
-#: ../addons/wp-owl-carousel/CMB2/tests/test-cmb-types.php:767 ../addons/wp-owl-
-#: carousel/CMB2/includes/CMB2_Ajax.php:137
-#, php-format
-msgid "No oEmbed Results Found for %s. View more info at"
-msgstr ""
-
 #: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Ajax.php:37
 msgid "Please Try Again"
 msgstr ""
 
+#: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Ajax.php:133
+msgid "Remove Embed"
+msgstr ""
+
+#: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Ajax.php:137
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
 #: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:294
 msgid "Add Row"
+msgstr ""
+
+#: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:353 ../addons/wp-owl-
+#: carousel/CMB2/includes/CMB2_Types.php:986 ../addons/wp-owl-
+#: carousel/CMB2/includes/CMB2_hookup.php:183
+msgid "Remove"
 msgstr ""
 
 #: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:722 ../addons/wp-owl-
@@ -3220,9 +3153,27 @@ msgstr ""
 msgid "No terms"
 msgstr ""
 
+#: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:835
+msgid "Add or Upload Files"
+msgstr ""
+
+#: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:893
+msgid "Add or Upload File"
+msgstr ""
+
 #: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:967 ../addons/wp-owl-
 #: carousel/CMB2/includes/CMB2_hookup.php:182
 msgid "Remove Image"
+msgstr ""
+
+#: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:981 ../addons/wp-owl-
+#: carousel/CMB2/includes/CMB2_hookup.php:184
+msgid "File:"
+msgstr ""
+
+#: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Types.php:984 ../addons/wp-owl-
+#: carousel/CMB2/includes/CMB2_hookup.php:185
+msgid "Download"
 msgstr ""
 
 #: ../addons/wp-owl-carousel/CMB2/includes/CMB2_Field.php:885
@@ -3341,7 +3292,7 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: ../woocommerce/content-product.php:92
+#: ../woocommerce/content-product.php:100
 msgid "More info"
 msgstr ""
 
@@ -3361,7 +3312,7 @@ msgid "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr ""
 
 #. Name of the theme
-msgid "Crystal Skull"
+msgid "CrystalSkull"
 msgstr ""
 
 #. Theme URI of the theme

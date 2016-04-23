@@ -1088,3 +1088,7 @@ body.my-account #bbpress-forums {
         display: none;
     }
 }
+
+.bbpress .col-lg-4.col-md-4{
+	margin-top:10px;
+}

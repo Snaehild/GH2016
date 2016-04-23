@@ -169,114 +169,166 @@ class crystalskull_Wp_Owl_Carousel {
 			foreach ($myposts as $post) {
 				$categories = wp_get_post_categories($post -> ID);
 				$cat_data = get_option("category_$categories[0]");
-				$html .= '<div>';
-				if (get_post_meta($post -> ID, 'overall_rating', true) != 0) {
-					$html .= '<div class="carousel_rating" style="color: ' . esc_attr($cat_data["catBG"]) . '">';
-					// overall stars
-					$overall_rating = get_post_meta($post -> ID, 'overall_rating', true);
+				if(of_get_option('rating_type') == 'numbers'){
+					$html .= '<div>';
+					if (get_post_meta($post -> ID, 'overall_rating', true) != 0) {
+						$html .= '<div class="carousel_rating carousel_rating_number">';
+						// overall stars
+						$overall_rating = get_post_meta($post -> ID, 'overall_rating', true);
 
 
-					if ($overall_rating != "0" && $overall_rating == "0.5") {
-						$html .= '
-                     <i class="fa fa-star-half-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     ';
+						if ($overall_rating != "0" && $overall_rating == "0.5") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 0.5</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "1") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 1</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "1.5") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 1.5</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "2") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 2</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "2.5") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 2.5</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "3") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 3</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "3.5") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 3.5</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "4") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 4</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "4.5") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 4.5</b>/5';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "5") {
+							$html .= '<b style="color: '.esc_attr($cat_data["catBG"]).' "><i class="fa fa-trophy"></i> 5</b>/5';
+						}
+						$html .= '</div>';
 					}
+				}else{
+					$html .= '<div>';
+					if (get_post_meta($post -> ID, 'overall_rating', true) != 0) {
+						$html .= '<div class="carousel_rating" style="color: ' . esc_attr($cat_data["catBG"]) . '">';
+						// overall stars
+						$overall_rating = get_post_meta($post -> ID, 'overall_rating', true);
 
-					if ($overall_rating != "0" && $overall_rating == "1") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                    ';
-					}
 
-					if ($overall_rating != "0" && $overall_rating == "1.5") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                    ';
-					}
+						if ($overall_rating != "0" && $overall_rating == "0.5") {
+							$html .= '
+	                     <i class="fa fa-star-half-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     ';
+						}
 
-					if ($overall_rating != "0" && $overall_rating == "2") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                    ';
-					}
+						if ($overall_rating != "0" && $overall_rating == "1") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                    ';
+						}
 
-					if ($overall_rating != "0" && $overall_rating == "2.5") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                    ';
-					}
+						if ($overall_rating != "0" && $overall_rating == "1.5") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-half-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                    ';
+						}
 
-					if ($overall_rating != "0" && $overall_rating == "3") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                     <i class="fa fa-star-o"></i>
-                    ';
-					}
+						if ($overall_rating != "0" && $overall_rating == "2") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                    ';
+						}
 
-					if ($overall_rating != "0" && $overall_rating == "3.5") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                     <i class="fa fa-star-o"></i>
-                    ';
-					}
+						if ($overall_rating != "0" && $overall_rating == "2.5") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-half-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                    ';
+						}
 
-					if ($overall_rating != "0" && $overall_rating == "4") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                    ';
-					}
+						if ($overall_rating != "0" && $overall_rating == "3") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                    ';
+						}
 
-					if ($overall_rating != "0" && $overall_rating == "4.5") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                    ';
-					}
+						if ($overall_rating != "0" && $overall_rating == "3.5") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-half-o"></i>
+	                     <i class="fa fa-star-o"></i>
+	                    ';
+						}
 
-					if ($overall_rating != "0" && $overall_rating == "5") {
-						$html .= '
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                    ';
+						if ($overall_rating != "0" && $overall_rating == "4") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-o"></i>
+	                    ';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "4.5") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star-half-o"></i>
+	                    ';
+						}
+
+						if ($overall_rating != "0" && $overall_rating == "5") {
+							$html .= '
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                     <i class="fa fa-star"></i>
+	                    ';
+						}
+						$html .= '</div>';
 					}
-					$html .= '</div>';
 				}
+
 				$post_thumbnail_id = get_post_thumbnail_id($post -> ID);
 				if (!isset($size_id))
 					$size_id = '';
