@@ -260,11 +260,11 @@ function usercountries_form($cid) {
 ?><select name="usercountry_id">
 	<option value="0"><?php esc_html_e('- Select -','crystalskull') ?></option>
 	<?php
-	
+
 		foreach ($countries as $country) {
 			$selected="";
-			 if ($usercountry_id[0]==$country->id_country) { $selected="selected";} 
-											
+			 if ($cid==$country->id_country) { $selected="selected";}
+
 											if($country->name == 'Afghanistan'){
 										           echo '<option '.$selected.' value='.esc_attr($country->id_country).'>'. esc_html__( 'Afghanistan', 'crystalskull' ).'</option>';
 										}elseif($country->name == 'Albania'){
@@ -743,7 +743,7 @@ function usercountries_form($cid) {
 										           echo '<option '.$selected.' value='.esc_attr($country->id_country).'>'. esc_html__( 'Zambia', 'crystalskull' ).'</option>';
 										}elseif($country->name == 'Zimbabwe'){
 										           echo '<option '.$selected.' value='.esc_attr($country->id_country).'>'. esc_html__( 'Zimbabwe', 'crystalskull' ).'</option>';
-										
+
 										}
 		}
 ?>

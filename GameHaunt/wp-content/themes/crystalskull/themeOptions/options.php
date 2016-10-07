@@ -240,8 +240,8 @@ $options[] = array( "name" => esc_html__("Background tint color", 'crystalskull'
                         "id" => "copyright",
                         "std" => "Made by Skywarrior Themes.",
                         "type" => "textarea");
-	$options[] = array( "name" => esc_html__("Terms link name", 'hikari'),
-                        "desc" => esc_html__("Enter your terms link name.", 'hikari'),
+	$options[] = array( "name" => esc_html__("Terms link name", 'crystalskull'),
+                        "desc" => esc_html__("Enter your terms link name.", 'crystalskull'),
                         "id" => "termsname",
                         "std" => "Terms & Conditions",
                         "type" => "text");
