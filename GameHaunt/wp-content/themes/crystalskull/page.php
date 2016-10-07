@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php wp_reset_postdata(); ?>
 <?php $custombck = wp_get_attachment_url( get_post_thumbnail_id($wp_query->post->ID) ); ?>
 <?php if(empty($custombck)){}else{ ?>
 <style>
