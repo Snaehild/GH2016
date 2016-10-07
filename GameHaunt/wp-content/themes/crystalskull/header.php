@@ -148,7 +148,7 @@ if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
 <?php }elseif(is_singular('clan') or is_front_page() or is_page_template('tmp-home.php')  or is_page_template('tmp-no-title.php') or is_page_template('tmp-home-left.php') or is_page_template('tmp-home-right.php') or is_page_template('tmp-home-news.php')){}elseif(is_search()){ ?>
 <div class="title_wrapper container">
 
-            <div class="col-lg-12"><h1><?php esc_html_e('Search: ', 'crystalskull');  echo get_search_query(); ?></h1></div>
+            <div class="col-lg-12"><h1><?php esc_html_e('Search Result for ', 'crystalskull');  echo get_search_query(); ?></h1></div>
             <div class="col-lg-12 breadcrumbs"><strong><?php crystalskull_breadcrumbs(); ?></strong></div>
 
 </div>
@@ -172,7 +172,7 @@ if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
              <h1><?php
                  if ( is_plugin_active( 'woocommerce/woocommerce.php' )){
                     if (is_shop()){ echo get_the_title(skywarrior_get_id_by_slug ('shop'));}
-                    else{ if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
+                    else{ if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
@@ -189,7 +189,7 @@ if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
 				        		esc_html_e( 'Blog Archives', 'crystalskull' );
 				        } ?>
 				    <?php endif; }else{the_title();} }
-                 }else{  if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
+                 }else{  if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
