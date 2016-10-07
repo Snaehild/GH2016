@@ -95,18 +95,18 @@ if ( ! class_exists( 'cmb2_bootstrap_205', false ) ) {
 		 * @since  2.0.0
 		 */
 		public function l10ni18n() {
-			$loaded = load_plugin_textdomain( 'cmb2', false, '/languages/' );
+			$loaded = load_plugin_textdomain( 'crystalskull', false, '/languages/' );
 			if ( ! $loaded ) {
-				$loaded = load_muplugin_textdomain( 'cmb2', '/languages/' );
+				$loaded = load_muplugin_textdomain( 'crystalskull', '/languages/' );
 			}
 			if ( ! $loaded ) {
-				$loaded = load_theme_textdomain( 'cmb2', '/languages/' );
+				$loaded = load_theme_textdomain( 'crystalskull', '/languages/' );
 			}
 
 			if ( ! $loaded ) {
-				$locale = apply_filters( 'plugin_locale', get_locale(), 'cmb2' );
+				$locale = apply_filters( 'plugin_locale', get_locale(), 'crystalskull' );
 				$mofile = get_template_directory() . '/addons/wp-owl-carousel/CMB2/languages/cmb2-' . $locale . '.mo';
-				load_textdomain( 'cmb2', $mofile );
+				load_textdomain( 'crystalskull', $mofile );
 			}
 		}
 

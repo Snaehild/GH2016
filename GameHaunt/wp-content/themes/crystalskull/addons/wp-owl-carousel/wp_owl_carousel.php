@@ -117,7 +117,7 @@ class crystalskull_Wp_Owl_Carousel {
 			$size_id = get_post_meta($id, self::prefix . 'image_size', true);
 			$sizes = get_intermediate_image_sizes();
 
-			$settings = $this -> generate_settings_array($id);
+			$settings = $owl->generate_settings_array($id);
 			$settings = json_encode($settings);
 			$lazyLoad = get_post_meta($id, self::prefix . 'lazyLoad', true);
 			$link_to_size = get_post_meta($id, self::prefix . 'link_to_size', true);
@@ -168,6 +168,7 @@ class crystalskull_Wp_Owl_Carousel {
 			$myposts = get_posts($args);
 			foreach ($myposts as $post) {
 				$categories = wp_get_post_categories($post -> ID);
+				if(isset($categories[0]))
 				$cat_data = get_option("category_$categories[0]");
 				if(of_get_option('rating_type') == 'numbers'){
 					$html .= '<div>';
@@ -359,15 +360,16 @@ class crystalskull_Wp_Owl_Carousel {
 				$html .= '/></a>';
 
 				$html .= ($link_to_size != 0) ? ' </a>' : '';
-
+				if(isset($categories[0]))
 				$html .= '<div class="car_title"><a href="' . esc_url(get_category_link($categories[0])) . '" class="ncategory" style="background-color: ' . esc_attr($cat_data["catBG"]) . ' !important" >';
+				if(isset($categories[0]))
 				$html .= get_cat_name($categories[0]);
 				$html .= '</a>';
 
 				$html .= '<a class="car_inner_title" href="' . get_the_permalink($post -> ID) . '">' . get_the_title($post -> ID) . '</a>';
 				$author_id=$post->post_author;
 				$html .= esc_html__('by ', 'crystalskull');
-				$html .= '<a data-original-title="' . esc_html__("View all posts by ", 'crystalskull') . get_the_author_meta( 'first_name' , $author_id ) . '" href="' . esc_url(get_author_posts_url($author_id) ) . '">' . get_the_author_meta( 'first_name' , $author_id ) . '</a></div>';
+				$html .= '<a data-original-title="' . esc_html__("View all posts by ", 'crystalskull') . get_the_author_meta( 'user_nicename' , $author_id ) . '" href="' . esc_url(get_author_posts_url($author_id) ) . '">' . get_the_author_meta( 'user_nicename' , $author_id ) . '</a></div>';
 
 				$html .= '</div>';
 			}
