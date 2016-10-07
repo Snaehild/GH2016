@@ -385,12 +385,14 @@ span.bbp-author-ip {
     overflow-wrap: normal;
 }
 div.bbp-breadcrumb {
-    float: left;
     margin-bottom: 20px;
 }
 div.bbp-breadcrumb,
 div.bbp-topic-tags {
     font-size: inherit;
+}
+#bbpress-forums div.bbp-breadcrumb{
+	display: none;
 }
 #bbpress-forums div.bbp-breadcrumb p,
 #bbpress-forums div.bbp-topic-tags p {
@@ -1006,9 +1008,7 @@ body.my-account #bbpress-forums {
     color: #95a5a6;
     background: #ecf0f1;
 }
-.bbp-breadcrumb {
-    display: none;
-}
+
 .bbp_widget_login input[type=text],
 .bbp_widget_login input[type=password] {
     width: 100%;

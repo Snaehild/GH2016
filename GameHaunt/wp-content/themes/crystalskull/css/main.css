@@ -1576,7 +1576,7 @@ body .newsbv li .ncategory, .ncategory{
     display: inline-block;
     padding: 0;
     width: 17%;
-    margin: 0 1% 3% 1.2%;
+    margin: 0 1% 3% 1%;
 }
 .socialb-wrapper li a {
     display: block;
@@ -4618,3 +4618,26 @@ ul.clanwar-list li.clanwar-item {
 }
 
 
+/* Instagram widget */
+.insta-feeds .featured-image img {
+    width: 100%;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    -o-box-filter: brightness(100%);
+	-moz-box-filter: brightness(100%);
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
+}
+.insta-feeds .featured-image img:hover{
+	-o-box-filter: brightness(120%);
+	-moz-box-filter: brightness(120%);
+	-webkit-filter: brightness(120%);
+	filter: brightness(120%);
+}
+.insta-feeds .featured-image {
+    width: 33.33%;
+    padding: 1px;
+    display: inline-block;
+}

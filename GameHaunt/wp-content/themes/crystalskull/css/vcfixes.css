@@ -137,5 +137,8 @@ body .vc_parallax h1, body .vc_parallax h2, body .vc_parallax h3, body .vc_paral
 body .vc_parallax h5, body .vc_parallax h6{
 	color:white;
 }
-
+body .vc_column_container>.vc_column-inner{
+	padding-left: 0px;
+    padding-right: 0px;
+}
 
