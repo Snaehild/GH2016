@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html  <?php language_attributes(); ?>>
     <head>
-
+<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <?php //globals
@@ -12,8 +13,16 @@
 	<?php $currentlang = apply_filters( "wpml_home_url", esc_url(home_url('/')));  ?>
 
 <?php wp_head();  ?>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QUMPn1QolK10Y8", domain:"gamehaunt.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QUMPn1QolK10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
 </head>
 <body <?php body_class(); ?>>
+<?php include_once("analyticstracking.php") ?>
 <div id="main_wrapper">
 
     <!-- NAVBAR
