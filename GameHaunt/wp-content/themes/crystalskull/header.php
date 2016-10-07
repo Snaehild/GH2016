@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html  <?php language_attributes(); ?>>
     <head>
-<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
-<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <?php //globals
@@ -19,10 +18,9 @@ _atrk_opts = { atrk_acct:"QUMPn1QolK10Y8", domain:"gamehaunt.com",dynamic: true}
 (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
 </script>
 <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QUMPn1QolK10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
-<!-- End Alexa Certify Javascript -->  
+<!-- End Alexa Certify Javascript -->
 </head>
 <body <?php body_class(); ?>>
-<?php include_once("analyticstracking.php") ?>
 <div id="main_wrapper">
 
     <!-- NAVBAR
@@ -120,9 +118,11 @@ _atrk_opts = { atrk_acct:"QUMPn1QolK10Y8", domain:"gamehaunt.com",dynamic: true}
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+
 <?php
 if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_component' ) ){
     $component = bp_current_component();
+
     if($component == 'members'){ ?>
         <div class="title_wrapper container">
 
@@ -130,14 +130,22 @@ if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_
            		<h1><?php esc_html_e('Search members', 'crystalskull'); ?></h1>
             </div>
 
-        <div class="clear"></div>
-</div>
+        	<div class="clear"></div>
+		</div>
     <?php }
 }else{
     $component = false;
 }
+$bbpress = false;
+if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
+
 ?>
-<?php if(is_singular('clan') or $component or is_front_page() or is_page_template('tmp-home.php')  or is_page_template('tmp-no-title.php') or is_page_template('tmp-home-left.php') or is_page_template('tmp-home-right.php') or is_page_template('tmp-home-news.php')){}elseif(is_search()){ ?>
+<?php if($component or $bbpress){ ?>
+<div class="title_wrapper container">
+	<div class="col-lg-12"><h1><?php the_title(); ?></h1></div>
+	<div class="col-lg-12 breadcrumbs"><strong><?php echo bbp_breadcrumb(); ?></strong></div>
+</div>
+<?php }elseif(is_singular('clan') or is_front_page() or is_page_template('tmp-home.php')  or is_page_template('tmp-no-title.php') or is_page_template('tmp-home-left.php') or is_page_template('tmp-home-right.php') or is_page_template('tmp-home-news.php')){}elseif(is_search()){ ?>
 <div class="title_wrapper container">
 
             <div class="col-lg-12"><h1><?php esc_html_e('Search: ', 'crystalskull');  echo get_search_query(); ?></h1></div>
@@ -164,7 +172,7 @@ if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_
              <h1><?php
                  if ( is_plugin_active( 'woocommerce/woocommerce.php' )){
                     if (is_shop()){ echo get_the_title(skywarrior_get_id_by_slug ('shop'));}
-                    else{ if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_nicename', get_query_var('author' ));}elseif(is_archive()){ ?>
+                    else{ if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
@@ -181,7 +189,7 @@ if(is_plugin_active('buddypress/bp-loader.php') && function_exists( 'bp_current_
 				        		esc_html_e( 'Blog Archives', 'crystalskull' );
 				        } ?>
 				    <?php endif; }else{the_title();} }
-                 }else{  if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_nicename', get_query_var('author' ));}elseif(is_archive()){ ?>
+                 }else{  if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
