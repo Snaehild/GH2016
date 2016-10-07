@@ -83,6 +83,10 @@ function crystalskull_theme_setup() {
 	add_filter( 'wp_link_pages_link', 'crystalskull_link_pages' );
 	add_filter('wp_link_pages_args', 'crystalskull_link_pages_args_prevnext_add');
 
+	/*buddypress*/
+	add_filter( 'bp_before_xprofile_cover_image_settings_parse_args', 'crystalskull_cover_image_css', 10, 1 );
+	add_filter( 'bp_before_groups_cover_image_settings_parse_args', 'crystalskull_cover_image_css', 10, 1 );
+
 
     /*****THEME-SUPPORTED FEATURES*****/
 
@@ -245,18 +249,18 @@ function crystalskull_breadcrumbs_inner() {
         echo '<a href="';
         echo esc_url(home_url('/'));
         echo '">';
-        esc_html_e('Home', 'crystalskull ');
+        esc_html_e('Home', 'crystalskull');
         echo "</a> / ";
 
         if(is_category()) {
-            esc_html_e('Category: ', 'crystalskull ');
+            esc_html_e('Category: ', 'crystalskull');
             echo esc_attr(single_cat_title());
 
         } elseif(is_404()) {
             echo '404';
 
         } elseif(is_search()) {
-            esc_html_e('Search: ', 'crystalskull ');
+            esc_html_e('Search: ', 'crystalskull');
             echo esc_attr(get_search_query());
 
         } elseif(is_author()) {
@@ -266,10 +270,10 @@ function crystalskull_breadcrumbs_inner() {
         } elseif (is_single()) {
             echo the_title();
         }elseif(is_tag()) {
-              esc_html_e('Tag: ', 'crystalskull ');
+              esc_html_e('Tag: ', 'crystalskull');
              echo crystalskull_GetTagName(get_query_var('tag_id'));
         }elseif( function_exists( 'is_shop' ) && is_shop() ){
-        	 esc_html_e('Shop', 'crystalskull ');
+        	 esc_html_e('Shop', 'crystalskull');
         }elseif( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
 
                 the_title();
@@ -516,8 +520,6 @@ function crystalskull_register_required_plugins() {
     $config = array(
         'domain'            => $theme_text_domain,          // Text domain - likely want to be the same as your theme.
         'default_path'      => '',                          // Default absolute path to pre-packaged plugins
-        'parent_menu_slug'  => 'themes.php',                // Default parent menu slug
-        'parent_url_slug'   => 'themes.php',                // Default parent URL slug
         'menu'              => 'install-required-plugins',  // Menu slug
         'has_notices'       => true,                        // Show admin notices or not
         'is_automatic'      => true,                       // Automatically activate plugins after installation or not
@@ -1249,6 +1251,47 @@ function skywarrior_get_id_by_slug($page_slug) {
 	}
 }
 
+/**
+ * Your theme callback function
+ *
+ * @see bp_legacy_theme_cover_image() to discover the one used by BP Legacy
+ */
+function crystalskull_cover_image_callback( $params = array() ) {
+    if ( empty( $params ) ) {
+        return;
+    }
+		if(!empty($params["height"])){
+	    echo '<style>
+	        /* Cover image - Do not forget this part */
+	        #buddypress #header-cover-image {
+	            height: ' . $params["height"] . 'px;
+				background-image: url(' . $params['cover_image'] . ');
+			    background-position: center top;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    border: 0;
+			    display: block;
+			    left: 0;
+			    margin: 0;
+			    padding: 0;
+			    position: absolute;
+			    top: 0;
+			    width: 100%;
+	        }
+
+			.group-create  #buddypress #header-cover-image {
+				position: relative !important;
+			}
+			</style>
+	    ';
+	}
+}
+
+function crystalskull_cover_image_css( $settings = array() ) {
+    $settings['callback'] = 'crystalskull_cover_image_callback';
+
+    return $settings;
+}
 /*-----------------------------------------------------------------------------------*/
 /*	Custom Login
 /*-----------------------------------------------------------------------------------*/
@@ -1283,6 +1326,5 @@ return $redirect_to;
 }
 }
 add_filter("login_redirect", "admin_login_redirect", 10, 3);
-
 /* Custom code goes above this line. */
 ?>
