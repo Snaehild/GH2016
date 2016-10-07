@@ -1,7 +1,7 @@
 <?php
 class sw_latest_comments extends WP_Widget {
 
-	function sw_latest_comments() {
+	function __construct() {
 		$widget_ops = array('description' => esc_html__('Show latest comments widget.', 'crystalskull') );
 		parent::__construct(false, esc_html__('SW Latest Comments', 'crystalskull'),$widget_ops);
 	}

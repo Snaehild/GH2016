@@ -7,7 +7,7 @@
 
 class sw_PopularWidget extends WP_Widget {
 
-    function sw_PopularWidget() {
+    function __construct() {
         parent::__construct(false, $name = esc_html__('SW Popular Posts', 'crystalskull'));
     }
 

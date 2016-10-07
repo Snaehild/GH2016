@@ -7,7 +7,7 @@
 
 class sw_latest_posts_Widget extends WP_Widget {
 
-    function sw_latest_posts_Widget() {
+    function __construct() {
         parent::__construct(false, $name = esc_html__('SW Latest Posts', 'crystalskull'));
     }
 
@@ -46,7 +46,7 @@ if ( $pc->have_posts() ) : ?>
 
 					// overall stars
 					$postid=$pc->post->ID;
-					$overall_rating = get_post_meta($post -> ID, 'overall_rating', true); ?>
+					$overall_rating = get_post_meta($postid, 'overall_rating', true); ?>
 					<?php if(of_get_option('rating_type') == 'numbers'){ ?>
 
 
