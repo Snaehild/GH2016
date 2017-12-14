@@ -150,7 +150,7 @@ li.bbp-topic-freshness {
     position: relative;
     display: block;
     overflow: hidden;
-    padding: 15px 25px;
+    padding: 35px 25px;
     border-bottom: 1px solid #eaeaea;
 }
 li.bbp-header div.bbp-topic-content span#subscription-toggle,
@@ -561,8 +561,8 @@ td.bbp-topic-counts {
 }
 .bbp-topic-pagination {
     position: absolute;
-    bottom: 8px;
-    left: 12px;
+    bottom: 10px;
+    left: 20px;
     display: inline-block;
 }
 .bbp-topic-pagination a {

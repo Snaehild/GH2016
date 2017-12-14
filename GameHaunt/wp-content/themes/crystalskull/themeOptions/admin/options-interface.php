@@ -2,14 +2,7 @@
 /**
  * Generates the options fields that are used in the form.
  */
-function import_completed_notice()
-{
-	echo ' <div class="updated" id="import_comp_noti" style="display:none;"><p>Success! The data has been imported successfully.</p></div>';
-}
-function import_incompleted_notice()
-{
-	echo ' <div class="update-nag" id="import_incomp_noti" style="display:none;"><p>To protect your content the demo importer only works when Wordpress is fresh installed. Please re-install Wordpress with the default settings if you want to import the demo data.<a href="#" id="close_update_nag"> X</a></p></div>';
-}
+
 function optionsframework_fields() {
 	global $allowedtags;
 	$optionsframework_settings = get_option('optionsframework');
@@ -325,67 +318,6 @@ function optionsframework_fields() {
 			$output .= '<div class="group" id="' . esc_attr( $jquery_click_hook ) . '">';
 			break;
 
-		//added by shark
-
-
-	 case 'impbutton':
-			$importer_url =  get_template_directory_uri()."/demo/import.php";
-			global $wpdb;
-			$count = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_type='post'" );
-			?>
-            	<script type="text/javascript">
-					jQuery(document).ready(function($)
-					{
-						var whatever = "<?php echo esc_url($importer_url); ?>";
-						var demo_stat = "<?php echo esc_attr($count); ?>";
-						jQuery("#close_update_nag").click(function(event)
-						{
-							jQuery('#import_incomp_noti').hide();
-						});
-
-						jQuery("#import_btn").click(function(event)
-						{ console.log('aaaa');
-							if(demo_stat > 4)
-							{
-								jQuery("input[id='import_btn']").prop('disabled', true);
-								 jQuery('#import_incomp_noti').show();
-							} else {
-							jQuery.ajax(
-							{
-								beforeSend: function()
-								{
-									jQuery("input[id='import_btn']").prop('disabled', true);
-									jQuery('#target').show();
-								},
-								complete: function()
-								{
-									jQuery('#target').hide();
-								},
-
-								url: whatever,
-								success: function(data)
-								{
-								jQuery('#import_comp_noti').show();
-
-								},
-						      error: function (data, xhr, ajaxOptions, thrownError) {
-						        console.log(xhr.status);
-						        console.log(data);
-						      }
-
-							});
-							}
-						});
-					});
-            	</script>
-
-        	<?php
-		  import_completed_notice();
-		  import_incompleted_notice();
-		$output .= '<input id="import_btn" class="button button-primary" type="button" value="import" rel="5">';
-		$output .= '<div class="loading" id="target" style="display:none;"><div class="loading_text">'.__("Please wait, the content is importing....", "crystalskull").'</div></div>';
-
-		break;
 		}
 		if ( ( $value['type'] != "heading" ) && ( $value['type'] != "info" ) ) {
 			if ( $value['type'] != "checkbox" ) {

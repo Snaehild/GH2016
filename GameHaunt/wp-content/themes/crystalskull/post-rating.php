@@ -1,8 +1,14 @@
 <?php
 // overall stars
 $overall_rating = get_post_meta($post->ID, 'overall_rating', true);
-$categories = wp_get_post_categories(get_the_ID());
-$cat_data = get_option("category_$categories[0]");
+
+$prim_cat = get_post_meta($post->ID, 'prim_cat', true);
+if($prim_cat) {
+    $cat_data = get_option("category_$prim_cat");
+} else {
+    $categories = wp_get_post_categories(get_the_ID());
+    $cat_data = get_option("category_$categories[0]"); 
+}
 
 
 if($overall_rating != "0" && $overall_rating == "0.5"){ ?>
@@ -556,8 +562,8 @@ if($rating_3 != "0" && $rating_3 == "4.5" && $rating_3_text != "" ){
 		<i class="fa fa-star"></i>
 		<i class="fa fa-star"></i>
 		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
 		<i class="fa fa-star-half-o"></i>
-		<i class="fa fa-star-o"></i>
 	</span>
 </li>
 <?php } ?>

@@ -1,8 +1,12 @@
-
 <?php
-$categories = wp_get_post_categories(get_the_ID());
-if(!isset($categories[0]))$categories[0]='';
-$cat_data = get_option("category_$categories[0]");
+$prim_cat = get_post_meta(get_the_ID(), 'prim_cat', true);
+if($prim_cat) {
+    $cat_data = get_option("category_$prim_cat");
+} else {
+    $categories = wp_get_post_categories(get_the_ID());
+    if(!isset($categories[0]))$categories[0]='';
+    $cat_data = get_option("category_$categories[0]");    
+}
 
 $overall_rating = get_post_meta(get_the_ID(), 'overall_rating', true);
 

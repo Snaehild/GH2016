@@ -819,7 +819,8 @@ body .woocommerce-cart .cart-collaterals .cart_totals tr th {
     margin-bottom: 0!important;
     border:1px solid #EAEAEA;
 }
-.single-product.woocommerce div.product form.cart .button.single_add_to_cart_button{
+.single-product.woocommerce div.product form.cart .button.single_add_to_cart_button,
+.single-product.woocommerce div.product .cart .button.single_add_to_cart_button{
 	border-width:1px;
 	border-style:solid;
 	top: 0px !important;

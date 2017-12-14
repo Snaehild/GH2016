@@ -60,3 +60,13 @@ body .dropdown-menu .sub-menu.dropdown-menu {
     visibility: none;
     left: initial;
 }
+.owl-carousel * {
+    direction: ltr !important;
+}
+
+.owl-carousel .car_title{
+	direction: rtl !important;
+}
+.owl-item:hover .car_title a, .car_title  .car_inner_title{
+	text-align:right;
+}

@@ -145,11 +145,6 @@ $options[] = array( "name" => esc_html__("Keywords", 'crystalskull'),
 // Colour Settings
     $options[] = array( "name" => esc_html__("Customize", 'crystalskull'),
                         "type" => "heading");
-	$options[] = array( "name" => "Fullwidth",
-                	"desc" => "Enable fullwidth site layout.",
-                	"id" => "fullwidth",
-                	"std" => "1",
-                 	"type" => "jqueryselect");
 // Backgrounds
     $options[] = array( "name" => esc_html__("Backgrounds", 'crystalskull'),
                         "type" => "info");
@@ -392,18 +387,6 @@ $imagepath =  get_template_directory_uri() . '/themeOptions/images/sidebar/';
                         's3' => $imagepath . 'right.png',
 
                         ));
-
-	//added by shark
-	$options[] = array( "name" => esc_html__("One click install", 'crystalskull'),
-                       "type" => "heading");
- 	$options[] = array( "name" => esc_html__("One click install", 'crystalskull'),
-                     "type" => "info");
-	$options[] = array( "name" => esc_html__("demo install", 'crystalskull'),
-                        "desc" => esc_html__("Click to install pre-inserted demo contents.", 'crystalskull'),
-                        "id" => "demo_install",
-                        "std" => "0",
-                        "type" => "impbutton");
-
 
 
     return $options;

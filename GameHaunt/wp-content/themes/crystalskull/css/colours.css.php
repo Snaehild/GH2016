@@ -33,7 +33,7 @@ $rgba3 = 'rgba('.$d.','.$e.','.$f.',0.1)';
 .dropdown:hover .dropdown-menu li > a:hover, .clan-generali .clan-members-app > .fa,
 .nextmatch_wrap:hover .nm-clans span, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus,
 input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
-input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus{
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
 	color:<?php echo of_get_option('primary_color'); ?> !important;
 }
 
@@ -54,7 +54,7 @@ input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, in
  .similar-projects ul li h3,
  .member h3, .main-colour,a, .dropdown-menu li > a:hover, .wallnav i,  div.rating:after, footer .copyright .social a:hover, .navbar-inverse .brand:hover, .member:hover > .member-social a, footer ul li a:hover, .widget ul li a:hover, .next_slide_text .fa-bolt ,
   .dropdown-menu li > a:focus, .dropdown-submenu:hover > a,
-  .comment-body .comment-author,  .navigation a:hover, .cart-wrap a, .bx-next-out:hover .next-arrow:before, body .navbar-wrapper .login-info .login-btn{
+  .comment-body .comment-author,  .navigation a:hover, .cart-wrap a, .bx-next-out:hover .next-arrow:before, body .navbar-wrapper .login-info .login-btn {
     color:<?php echo of_get_option('primary_color'); ?>;
 }
 
@@ -82,11 +82,11 @@ body .woocommerce .price_slider_amount button.button:hover{
 .next-arrow{
 	border-left: 30px solid <?php echo of_get_option('top_grad_color'); ?>;
 }
-body .woocommerce .price_slider_amount button.button, .single-product.woocommerce div.product form.cart .button.single_add_to_cart_button, input[type=password]:active, input[type=password]:focus, input[type=password]:hover, input[type=text]:active, input[type=text]:focus, input[type=text]:hover,  select:active, select:focus, select:hover, textarea:active, textarea:focus, textarea:hover,
+body .woocommerce .price_slider_amount button.button, .single-product.woocommerce div.product .cart .button.single_add_to_cart_button, .single-product.woocommerce div.product form.cart .button.single_add_to_cart_button, input[type=password]:active, input[type=password]:focus, input[type=password]:hover, input[type=text]:active, input[type=text]:focus, input[type=text]:hover,  select:active, select:focus, select:hover, textarea:active, textarea:focus, textarea:hover,
 .page-numbers,  div.bbp-template-notice, div.indicator-hint,  div.pagination a, div.pagination span,body.woocommerce nav.woocommerce-pagination ul li a, body.woocommerce nav.woocommerce-pagination ul li span{
 	border: 1px solid <?php echo of_get_option('primary_color'); ?> !important;
 }
-.single-product.woocommerce div.product form.cart .button.single_add_to_cart_button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a {
+.single-product.woocommerce div.product .cart .button.single_add_to_cart_button, .single-product.woocommerce div.product form.cart .button.single_add_to_cart_button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a {
 	background: <?php echo of_get_option('primary_color'); ?>  !important;
 }
 .woocommerce span.onsale, .woocommerce-page span.onsale, .woocommerce-message, .woocommerce-error, .woocommerce-info, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range{
