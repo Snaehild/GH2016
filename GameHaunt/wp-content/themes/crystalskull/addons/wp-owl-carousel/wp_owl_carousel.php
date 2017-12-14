@@ -67,7 +67,14 @@ class crystalskull_Wp_Owl_Carousel {
 			$cats = '';
 		$carousel_metabox -> add_field(array('name' => esc_html__('Posts', 'crystalskull'), 'desc' => esc_html__('Choose post category you want to display', 'crystalskull'), 'id' => self::prefix . 'post_cat', 'type' => 'select', 'default' => 'none', 'options' => $cats));
 
-		$carousel_metabox -> add_field(array('name' => esc_html__('Images', 'crystalskull'), 'desc' => esc_html__('Images to use', 'crystalskull'), 'id' => self::prefix . 'images', 'type' => 'file_list'));
+        $carousel_metabox -> add_field(array('name' => esc_html__('Number of posts', 'crystalskull'), 
+            'desc' => esc_html__('', 'crystalskull'), 
+            'default' => '', 
+            'type' => 'text', 
+            'id' => self::prefix . 'number_posts'
+        ));
+		
+        $carousel_metabox -> add_field(array('name' => esc_html__('Images', 'crystalskull'), 'desc' => esc_html__('Images to use', 'crystalskull'), 'id' => self::prefix . 'images', 'type' => 'file_list'));
 
 		$image_sizes = get_intermediate_image_sizes();
 		$carousel_metabox -> add_field(array('name' => esc_html__('Select size', 'crystalskull'), 'desc' => esc_html__('Select image size to use', 'crystalskull'), 'id' => self::prefix . 'image_size', 'type' => 'select', 'show_option_none' => false, 'default' => 'custom', 'options' => $image_sizes));
@@ -107,7 +114,10 @@ class crystalskull_Wp_Owl_Carousel {
 	public static function generate_owl_html($id) {
 		$owl = new crystalskull_Wp_Owl_Carousel;
 		$files = $owl -> get_owl_items($id);
+        $number_posts = get_post_meta($id, self::prefix . 'number_posts', true);
+        $number_posts = $number_posts ? $number_posts : '-1';
 		$category = get_post_meta($id, self::prefix . 'post_cat', 1);
+        
 
 		if ($category == 0) {
 
@@ -161,15 +171,22 @@ class crystalskull_Wp_Owl_Carousel {
 			$rel = get_post_meta($id, self::prefix . 'rel', true);
 			$html = '<div id="owl-carousel-' . $id . '" class="owl-carousel" data-owloptions=\'' . $settings . '\'>';
 
-			if ($category == 999) {$args = array('orderby' => 'rand', 'posts_per_page' => -1);
-			} else {$args = array('category' => $category, 'posts_per_page' => -1);
+			if ($category == 999) {$args = array('orderby' => 'date', 'posts_per_page' => $number_posts);
+			} else {$args = array('category' => $category, 'orderby' => 'date', 'posts_per_page' => $number_posts);
 			}
 
 			$myposts = get_posts($args);
 			foreach ($myposts as $post) {
 				$categories = wp_get_post_categories($post -> ID);
 				if(isset($categories[0]))
-				$cat_data = get_option("category_$categories[0]");
+				
+                $prim_cat = get_post_meta($post->ID, 'prim_cat', true);
+                if($prim_cat) {
+                    $cat_data = get_option("category_$prim_cat");
+                } else {
+                    $cat_data = get_option("category_$categories[0]");
+                }
+                                
 				if(of_get_option('rating_type') == 'numbers'){
 					$html .= '<div>';
 					if (get_post_meta($post -> ID, 'overall_rating', true) != 0) {
@@ -368,8 +385,8 @@ class crystalskull_Wp_Owl_Carousel {
 
 				$html .= '<a class="car_inner_title" href="' . get_the_permalink($post -> ID) . '">' . get_the_title($post -> ID) . '</a>';
 				$author_id=$post->post_author;
-				$html .= esc_html__('by ', 'crystalskull');
-				$html .= '<a data-original-title="' . esc_html__("View all posts by ", 'crystalskull') . get_the_author_meta( 'user_nicename' , $author_id ) . '" href="' . esc_url(get_author_posts_url($author_id) ) . '">' . get_the_author_meta( 'user_nicename' , $author_id ) . '</a></div>';
+				$html .= esc_html__('by', 'crystalskull').' ';
+				$html .= '<a data-original-title="' . esc_html__("View all posts by", 'crystalskull'). ' ' . get_the_author_meta( 'user_nicename' , $author_id ) . '" href="' . esc_url(get_author_posts_url($author_id) ) . '">' . get_the_author_meta( 'user_nicename' , $author_id ) . '</a></div>';
 
 				$html .= '</div>';
 			}
