@@ -36,20 +36,29 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_text_column
         <div class="wcontainer column_news_wrapper">
           <ul class="newsbh">
           <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-				<?php global $post; $categories = wp_get_post_categories($post->ID);  ?>
-				<?php $cat_data = get_option("category_$categories[0]");  ?>
+        	 	<?php global $post; 
+                    $prim_cat = get_post_meta($post->ID, 'prim_cat', true);
+                    if($prim_cat) {
+                        $cat_data = get_option("category_$prim_cat");
+                        $cat_id = $prim_cat;
+                    } else {
+                        $categories = wp_get_post_categories($post->ID);
+                        $cat_id = $categories[0];
+                        $cat_data = get_option("category_$cat_id"); 
+                    } 
+                 ?>				
                 <li class="newsbh-item">
 
                 		<?php global $post; $categories = wp_get_post_categories($post->ID);  ?>
                 		<?php $i = 0; $len = count($categories);
                 		foreach ($categories as $category) {
-                				$cat_data = get_option("category_$category");
+                				$cat_data_0 = get_option("category_$category");
                 			  	if ($i == $len - 1) {
-       							?><a href="<?php echo esc_url(get_category_link($category)); ?>" class="ncategory" style="background-color: <?php echo esc_attr($cat_data['catBG']); ?> !important" >
+       							?><a href="<?php echo esc_url(get_category_link($category)); ?>" class="ncategory" style="background-color: <?php echo esc_attr($cat_data_0['catBG']); ?> !important" >
        							  <?php	echo get_cat_name($category); ?>
 								  </a>
     							<?php }else{
-    							?> <a href="<?php echo esc_url(get_category_link($category)); ?>" class="ncategory" style="background-color: <?php echo esc_attr($cat_data['catBG']); ?> !important" >
+    							?> <a href="<?php echo esc_url(get_category_link($category)); ?>" class="ncategory" style="background-color: <?php echo esc_attr($cat_data_0['catBG']); ?> !important" >
     							  <?php	echo get_cat_name($category); ?>
     							  </a>
     							  <?php
@@ -274,7 +283,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_text_column
 			                	<?php echo get_avatar( get_the_author_meta('ID'), 60, '', 'author image', array('class' => 'authorimg') ); ?>
 
 
-			    	 				by <a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) )); ?>"><?php echo get_the_author(); ?></a> <?php esc_html_e('on', 'crystalskull'); ?> <?php the_time('F j, Y'); ?> <?php esc_html_e('with', 'crystalskull'); ?>
+			    	 				<?php esc_html_e('by','crystalskull'); ?> <a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) )); ?>"><?php echo get_the_author(); ?></a> <?php esc_html_e('on', 'crystalskull'); ?> <?php the_time('F j, Y'); ?> <?php esc_html_e('with', 'crystalskull'); ?>
 			                      <?php if ( is_plugin_active( 'disqus-comment-system/disqus.php' )){ ?>
 			                        <a  href="<?php echo the_permalink(); ?>#comments" >
 			                        <?php comments_number( esc_html__('0', 'crystalskull'), esc_html__('1', 'crystalskull'), esc_html__('%', 'crystalskull') ) ?> <i class="fa fa-comments-o"></i></a>

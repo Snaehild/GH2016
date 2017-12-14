@@ -75,7 +75,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_text_column
 							</h2>
 							<div class="post-pinfo">
 
-							<a data-original-title="<?php esc_html_e("View all posts by", 'crystalskull'); ?> <?php echo esc_attr(get_the_author()); ?>" data-toggle="tooltip" href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ))); ?>"><?php echo get_avatar( get_the_author_meta('ID'), 60, '', 'author image', array('class' => 'authorimg') ); ?> by <?php echo esc_attr(get_the_author()); ?></a>
+							<a data-original-title="<?php esc_html_e("View all posts by", 'crystalskull'); ?> <?php echo esc_attr(get_the_author()); ?>" data-toggle="tooltip" href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ))); ?>"><?php echo get_avatar( get_the_author_meta('ID'), 60, '', 'author image', array('class' => 'authorimg') ); ?> <?php esc_html_e('by', 'crystalskull'); ?> <?php echo esc_attr(get_the_author()); ?></a>
 							<i>|</i>
 							<?php $postcats = wp_get_post_categories($post->ID); if ($postcats) {?>  <?php foreach($postcats as $c) {$cat = get_category( $c ); ?>  <a href="<?php echo esc_url(get_category_link($cat->cat_ID)); ?>"> <?php echo esc_attr($cat->cat_name) . ' '; ?> </a><?php }}?>
 

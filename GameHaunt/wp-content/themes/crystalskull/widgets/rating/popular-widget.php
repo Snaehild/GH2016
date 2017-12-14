@@ -52,8 +52,15 @@ if ( $pc->have_posts() ) : ?>
           </a>
 
           <?php
-		global $post;$categories = wp_get_post_categories($post->ID);
-		$cat_data = get_option("category_$categories[0]");
+		global $post;
+
+        $prim_cat = get_post_meta($post->ID, 'prim_cat', true);
+        if($prim_cat) {
+            $cat_data = get_option("category_$prim_cat");
+        } else {
+            $categories = wp_get_post_categories($post->ID);
+            $cat_data = get_option("category_$categories[0]"); 
+        }        
 
 		// overall stars
 		$postid=$pc->post->ID;
