@@ -118,6 +118,10 @@ td, th {
 table {
 background: #fff;
 -moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+border: 1px solid #ddd;
+margin:auto;
   }
 
  table thead, table tfoot { background: #f5f5f5; }
@@ -3035,6 +3039,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
     border-color: 0;
     min-height:80px;
     float:left;
+	width: 75%;
 }
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
     color: #fff;
