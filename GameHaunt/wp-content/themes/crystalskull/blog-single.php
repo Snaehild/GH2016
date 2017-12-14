@@ -1,3 +1,5 @@
+<a href="http://mmo-it.com/UGt" target="_blank"><div style="width:100%;height:0;padding-bottom:13%;position:relative;"><img src="https://media.giphy.com/media/3oeHLCLprAdl5U6ttm/giphy.gif" width="100%" height="100%" style="position:absolute"></div></a>
+
 <div class="blog-post"><!-- blog-post -->
 
 	<div class="blog-info"><!-- blog-info -->
@@ -52,3 +54,4 @@
 
 	<div class="clear"></div>
 </div><!-- /.blog-post -->
+<a href="http://mmo-it.com/Xmf" target="_blank"><div style="width:100%;height:0;padding-bottom:13%;position:relative;"><img src="https://media.giphy.com/media/3o6vXIwA5MaNMaQDh6/giphy.gif" width="100%" height="100%" style="position:absolute"></div></a>

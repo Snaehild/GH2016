@@ -18,9 +18,21 @@ _atrk_opts = { atrk_acct:"QUMPn1QolK10Y8", domain:"gamehaunt.com",dynamic: true}
 (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
 </script>
 <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QUMPn1QolK10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
-<!-- End Alexa Certify Javascript -->
+<!-- End Alexa Certify Javascript -->  
+
+<!-- KYA Certify Javascript -->
+<script type="text/javascript">
+window.KYA_API_KEY = "pub-01309b9eff4d5d44b9f941d2edef6eb3_";
+(function(i,s,o,g,r,a,m){i['KyaAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script', 'https://cdn.getkya.com/assets/plugin/kya-analytics.js','kya');
+</script>
+<!-- KYA Certify Javascript -->
+
 </head>
 <body <?php body_class(); ?>>
+<?php include_once("analyticstracking.php") ?>
 <div id="main_wrapper">
 
     <!-- NAVBAR
@@ -172,7 +184,7 @@ if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
              <h1><?php
                  if ( is_plugin_active( 'woocommerce/woocommerce.php' )){
                     if (is_shop()){ echo get_the_title(skywarrior_get_id_by_slug ('shop'));}
-                    else{ if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
+                    else{ if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_firstname', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
@@ -189,7 +201,7 @@ if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
 				        		esc_html_e( 'Blog Archives', 'crystalskull' );
 				        } ?>
 				    <?php endif; }else{the_title();} }
-                 }else{  if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
+                 }else{  if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_firstname', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
