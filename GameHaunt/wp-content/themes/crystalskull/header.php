@@ -12,27 +12,8 @@
 	<?php $currentlang = apply_filters( "wpml_home_url", esc_url(home_url('/')));  ?>
 
 <?php wp_head();  ?>
-<!-- Start Alexa Certify Javascript -->
-<script type="text/javascript">
-_atrk_opts = { atrk_acct:"QUMPn1QolK10Y8", domain:"gamehaunt.com",dynamic: true};
-(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
-</script>
-<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QUMPn1QolK10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
-<!-- End Alexa Certify Javascript -->  
-
-<!-- KYA Certify Javascript -->
-<script type="text/javascript">
-window.KYA_API_KEY = "pub-01309b9eff4d5d44b9f941d2edef6eb3_";
-(function(i,s,o,g,r,a,m){i['KyaAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script', 'https://cdn.getkya.com/assets/plugin/kya-analytics.js','kya');
-</script>
-<!-- KYA Certify Javascript -->
-
 </head>
 <body <?php body_class(); ?>>
-<?php include_once("analyticstracking.php") ?>
 <div id="main_wrapper">
 
     <!-- NAVBAR
@@ -152,12 +133,13 @@ $bbpress = false;
 if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
 
 ?>
-<?php if($component or $bbpress){ ?>
+<?php if($bbpress){
+//if($component or $bbpress){ ?>
 <div class="title_wrapper container">
 	<div class="col-lg-12"><h1><?php the_title(); ?></h1></div>
 	<div class="col-lg-12 breadcrumbs"><strong><?php echo bbp_breadcrumb(); ?></strong></div>
 </div>
-<?php }elseif(is_singular('clan') or is_front_page() or is_page_template('tmp-home.php')  or is_page_template('tmp-no-title.php') or is_page_template('tmp-home-left.php') or is_page_template('tmp-home-right.php') or is_page_template('tmp-home-news.php')){}elseif(is_search()){ ?>
+<?php }elseif(is_singular('clan') or is_front_page() or is_page_template('tmp-home.php')  or is_page_template('tmp-no-title.php') or is_page_template('tmp-home-left.php') or is_page_template('tmp-home-right.php') or is_page_template('tmp-home-news.php') or $component){}elseif(is_search()){ ?>
 <div class="title_wrapper container">
 
             <div class="col-lg-12"><h1><?php esc_html_e('Search Result for ', 'crystalskull');  echo get_search_query(); ?></h1></div>
@@ -183,25 +165,39 @@ if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
 				}  ?>
              <h1><?php
                  if ( is_plugin_active( 'woocommerce/woocommerce.php' )){
-                    if (is_shop()){ echo get_the_title(skywarrior_get_id_by_slug ('shop'));}
-                    else{ if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' ); }elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_firstname', get_query_var('author' ));}elseif(is_archive()){ ?>
-				  	<?php if ( is_day() ) : ?>
-				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
-				    <?php elseif ( is_month() ) : ?>
-				        <?php printf( esc_html__( 'Monthly Archives: %s', 'crystalskull' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'crystalskull' ) ) ); ?>
-				    <?php elseif ( is_year() ) : ?>
-				        <?php printf( esc_html__( 'Yearly Archives: %s', 'crystalskull' ), get_the_date( _x( 'Y', 'yearly archives date format', 'crystalskull' ) ) ); ?>
-				    <?php else : ?>
-				        <?php
-				        if(function_exists('is_bbpress')){
-				        	if(is_bbpress()){
-				        		esc_html_e( 'Forums', 'crystalskull' );
-				        	}
-						}else{
-				        		esc_html_e( 'Blog Archives', 'crystalskull' );
-				        } ?>
-				    <?php endif; }else{the_title();} }
-                 }else{  if(is_tag()){esc_html_e("",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("",'crystalskull');echo get_the_author_meta('user_firstname', get_query_var('author' ));}elseif(is_archive()){ ?>
+                    if (is_shop()){ 
+                        echo get_the_title(skywarrior_get_id_by_slug ('shop'));
+                    } elseif( is_product_category() || is_product_tag()) {
+                        woocommerce_page_title();
+                    } else { 
+                        if(is_tag()){
+                            esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' ); 
+                        }elseif(is_category()){
+                            esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));
+                        }elseif(is_author()){
+                            esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));
+                        }elseif(is_archive()){ ?>
+        				  	<?php if ( is_day() ) : ?>
+        				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
+        				    <?php elseif ( is_month() ) : ?>
+        				        <?php printf( esc_html__( 'Monthly Archives: %s', 'crystalskull' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'crystalskull' ) ) ); ?>
+        				    <?php elseif ( is_year() ) : ?>
+        				        <?php printf( esc_html__( 'Yearly Archives: %s', 'crystalskull' ), get_the_date( _x( 'Y', 'yearly archives date format', 'crystalskull' ) ) ); ?>
+        				    <?php else : ?>
+        				        <?php
+        				        if(function_exists('is_bbpress')){
+        				        	if(is_bbpress()){
+        				        		esc_html_e( 'Forums', 'crystalskull' );
+        				        	}
+        						}else{
+        				        	esc_html_e( 'Blog Archives', 'crystalskull' );
+        				        } ?>
+        				    <?php endif; 
+                        }else{
+                            the_title();
+                        } 
+                    }
+                 }else{  if(is_tag()){esc_html_e("Tag: ",'crystalskull');echo get_query_var('tag' );}elseif(is_category()){esc_html_e("Category: ",'crystalskull');echo get_the_category_by_ID(get_query_var('cat'));}elseif(is_author()){esc_html_e("Author: ",'crystalskull');echo get_the_author_meta('user_login', get_query_var('author' ));}elseif(is_archive()){ ?>
 				  	<?php if ( is_day() ) : ?>
 				        <?php printf( esc_html__( 'Daily Archives: %s', 'crystalskull' ), get_the_date() ); ?>
 				    <?php elseif ( is_month() ) : ?>
@@ -220,8 +216,20 @@ if(is_plugin_active('bbpress/bbpress.php')) $bbpress =  is_bbpress();
 				    <?php endif; }else{the_title();} } ?>
             </h1>
             </div>
-            <div class="col-lg-12 breadcrumbs"><strong><?php crystalskull_breadcrumbs(); ?></strong></div>
-
+            <?php if ( is_plugin_active( 'woocommerce/woocommerce.php' ) && is_woocommerce()){ ?>
+                        <?php
+                        	$args = array(
+                        			'delimiter' => ' / ',
+                        			'wrap_before' => '',
+                                    'wrap_after' => '',
+                                    'before' => '',
+                                    'after'  => '',
+                        	);
+                        ?>                
+                <div class="col-lg-12 breadcrumbs"><strong><?php woocommerce_breadcrumb($args); ?></strong></div>
+            <?php  } else { ?>
+                <div class="col-lg-12 breadcrumbs"><strong><?php crystalskull_breadcrumbs(); ?></strong></div>
+            <?php } ?>
         <div class="clear"></div>
 </div>
 <?php } ?>
@@ -256,9 +264,19 @@ if(get_post_meta($post->ID, '_smartmeta_slider_short', true)){ ?>
                 	 <ul id="webticker" >
                         <?php $i = 0; foreach ($posts_array as $post) { $i ++; ?>
                             <li id='item<?php echo esc_attr($i); ?>'>
-                               	<?php $categories = wp_get_post_categories($post->ID); $cat_data = get_option("category_$categories[0]"); ?>
-                            	<a href="<?php echo esc_url(get_category_link($categories[0])); ?>" class="ticker_cat" style="background-color: <?php echo esc_attr($cat_data["catBG"]); ?> !important" >
-						       		<?php echo esc_attr(get_cat_name($categories[0])); ?>
+                               	<?php 
+                                    $prim_cat = get_post_meta($post->ID, 'prim_cat', true);
+                                    if($prim_cat) {
+                                        $cat_data = get_option("category_$prim_cat");
+                                        $cat_id = $prim_cat;
+                                    } else {
+                                        $categories = wp_get_post_categories($post->ID);
+                                        $cat_id = $categories[0];
+                                        $cat_data = get_option("category_$cat_id"); 
+                                    } 
+                                   ?>
+                            	<a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="ticker_cat" style="background-color: <?php echo esc_attr($cat_data["catBG"]); ?> !important" >
+						       		<?php echo esc_attr(get_cat_name($cat_id)); ?>
 								</a>
 
 								<a href="<?php the_permalink(); ?>">

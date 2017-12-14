@@ -386,7 +386,7 @@ class crystalskull_Wp_Owl_Carousel {
 				$html .= '<a class="car_inner_title" href="' . get_the_permalink($post -> ID) . '">' . get_the_title($post -> ID) . '</a>';
 				$author_id=$post->post_author;
 				$html .= esc_html__('by', 'crystalskull').' ';
-				$html .= '<a data-original-title="' . esc_html__("View all posts by", 'crystalskull'). ' ' . get_the_author_meta( 'user_nicename' , $author_id ) . '" href="' . esc_url(get_author_posts_url($author_id) ) . '">' . get_the_author_meta( 'user_nicename' , $author_id ) . '</a></div>';
+				$html .= '<a data-original-title="' . esc_html__("View all posts by", 'crystalskull'). ' ' . get_the_author_meta( 'first_name' , $author_id ) . '" href="' . esc_url(get_author_posts_url($author_id) ) . '">' . get_the_author_meta( 'first_name' , $author_id ) . '</a></div>';
 
 				$html .= '</div>';
 			}

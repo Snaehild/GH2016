@@ -95,6 +95,7 @@ a {
 }
 iframe {
     border: 0!important;
+    max-width: 100%!important;
 }
 .title {
     margin: 10px 0 35px;
@@ -168,7 +169,6 @@ html.fullwidth body .blog, html.fullwidth body .normal-page, html.fullwidth body
     margin-bottom: 40px;
 }
 #sliderhome {
-    margin-top: -180px;
     margin-bottom: 0;
     -webkit-transition: linear .3s;
     -moz-transition: linear .3s;
@@ -373,7 +373,7 @@ body .nav-top-divider {
 	border-color: transparent #fff transparent transparent;
 }
 .navbar-collapse:after{
-	right:-80px;
+	right:-79px;
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -669,7 +669,7 @@ td.avatar .avatar {
 .after-nav .container:before{
 	content: '';
     position: absolute;
-    left: -300%;
+    left: -299%;
     top: 0px;
     width: 300%;
     height: 100%;
@@ -681,7 +681,6 @@ td.avatar .avatar {
 .navbar-wrapper {
     z-index: 9999;
     background:transparent !important;
-    margin-bottom:100px;
 }
 .top-menu-bar{
 	background:#151b21;
@@ -3819,7 +3818,7 @@ html:not(.js) .full-width-section {
 .ticker-title:before{
 	content: '';
     position: absolute;
-    right: -25px;
+    right: -24px;
     top: 0px;
     width: 0;
     height: 0;
